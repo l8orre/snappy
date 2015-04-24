@@ -5486,6 +5486,7 @@ class SNET_makeoffer3(SNET_BaseTest):
 
 
     """#
+    
     SNET_orderbook = SNET_orderbook
 
     def setUp(self):
@@ -5497,30 +5498,42 @@ class SNET_makeoffer3(SNET_BaseTest):
 
 
     def test_makeoffer3(self):
+        baseid=0
+        if(sys.argv[2:]):
+            baseid = sys.argv[2:][0]
+        
         null = None
-        baseid = '11060861818140490423'
+        if(baseid==0):
+            baseid = '11060861818140490423'
         relid = '5527630'
 
         #Max NXT Amount
-        maxAmount=50
+        maxAmount=15
 
         orderbookResponse = self.SNET_orderbook.orderbook(self, baseid,relid)
         print('\nCheck orderbook\n')
-        print(orderbookResponse['bids'][0],'\n')
+        print(orderbookResponse['asks'][0],'\n')
 
-        #get first bid
-        query_json = orderbookResponse['bids'][0]
+        #get first ask
+        query_json = orderbookResponse['asks'][0]
 
-        query_json['perc']=100
+        query_json['perc']=1
         query_json['askoffer']=1
-
-        totalAmount = orderbookResponse['bids'][0]['volume']*orderbookResponse['bids'][0]['price']
-
-        print(totalAmount, orderbookResponse['bids'][0]['rel'])
+        
+        totalAmount = ((orderbookResponse['asks'][0]['volume']*orderbookResponse['asks'][0]['price'])/100)*query_json['perc']
+        
+        while(totalAmount>maxAmount):
+            query_json['perc']+=1
+            totalAmount = ((orderbookResponse['asks'][0]['volume']*orderbookResponse['asks'][0]['price'])/100)*query_json['perc']
+        
+        print('Trade will be a total of: ',totalAmount, orderbookResponse['asks'][0]['rel'])
+        print('Perc is set to: ',query_json['perc'])
 
         if(totalAmount<maxAmount):
             print('ok total Amount of Order is in Range. Proceeding.\n')
             self.makeoffer3(query_json)
+        else:
+            print('Total Amount out of Range. Aborting.\n')
 
     def makeoffer3(self, query):
         null = None #  b'{"result":null}' for when null is sent back, which py doenst know
@@ -6354,9 +6367,14 @@ def main():
 
     for  testCase in args:
 
-        if testCase in testClasses: # dict of classes
+        if testCase == 'makeoffer3':
+            runner = unittest.TextTestRunner()
+            runner.run(SNET_makeoffer3())
+        
+        elif testCase in testClasses: # dict of classes
             runner = unittest.TextTestRunner()
             runner.run(testClasses[testCase]())
+            
 
         elif testCase in testSuites: # dict of suites
              suite  = testSuites[testCase]()
