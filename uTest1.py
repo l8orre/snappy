@@ -609,14 +609,6 @@ query  ramstatus
         self.assertTrue('result' in rpl777.keys() )
 
 
-    def test_APICALL(self):
-        """
-
-        """ #
-        rpl777 = self.getpeers()
-        self.assertTrue('peers' in rpl777.keys())
-
-
     def APICALL(self):
         null = None
         print(2*"\n++++++++++++","test_APICALL")
@@ -757,14 +749,6 @@ query ramstring
             self.assertTrue('result' in rpl777.keys() )
 
 
-    def test_APICALL(self):
-        """
-
-        """ #
-        rpl777 = self.getpeers()
-        self.assertTrue('peers' in rpl777.keys())
-
-
     def APICALL(self):
         null=None
         print(2*"\n++++++++++++","test_APICALL")
@@ -828,14 +812,6 @@ query ramrawind
             print(2*"\n~~~~~~~~~~~~","error in SuperNET rpl777y:\n\n", rpl777)
         else:
             self.assertTrue('result' in rpl777.keys() )
-
-
-    def test_APICALL(self):
-        """
-
-        """ #
-        rpl777 = self.getpeers()
-        self.assertTrue('peers' in rpl777.keys())
 
 
     def APICALL(self):
@@ -1471,7 +1447,24 @@ class ___MGW():
 
 
 class SNET_genmultisig(SNET_BaseTest):
+    """
 
+**genmultisig**
+test class:  SNET_genmultisig
+
+test number: 20
+
+
+    smoke test
+
+tests performed:
+query genmultisig
+
+ //assertions://
+
+        self.assertTrue('result' in rpl777.keys())
+
+    """
 
     def setUp(self):
         print(" test setUp func here")
@@ -1500,14 +1493,6 @@ class SNET_genmultisig(SNET_BaseTest):
         self.assertTrue('result' in rpl777.keys() )
 
 
-    def test_APICALL(self):
-        """
-
-        """ #
-        rpl777 = self.getpeers()
-        self.assertTrue('peers' in rpl777.keys())
-
-
     def APICALL(self):
         null=None
         print(2*"\n++++++++++++","test_APICALL")
@@ -1526,7 +1511,24 @@ class SNET_genmultisig(SNET_BaseTest):
 
 
 class SNET_getmsigpubkey(SNET_BaseTest):
+    """
 
+**getmsigpubkey**
+test class:  SNET_getmsigpubkey
+
+test number: 21
+
+
+    smoke test
+
+tests performed:
+query getmsigpubkey
+
+ //assertions://
+
+        self.assertTrue('result' in rpl777.keys())
+
+    """
 
     def setUp(self):
         print(" test setUp func here")
@@ -1556,14 +1558,6 @@ class SNET_getmsigpubkey(SNET_BaseTest):
         self.assertTrue('result' in rpl777.keys() )
 
 
-    def test_APICALL(self):
-        """
-
-        """ #
-        rpl777 = self.getpeers()
-        self.assertTrue('peers' in rpl777.keys())
-
-
     def APICALL(self):
         null=None
         print(2*"\n++++++++++++","test_APICALL")
@@ -1582,7 +1576,24 @@ class SNET_getmsigpubkey(SNET_BaseTest):
 
 
 class SNET_MGWaddr(SNET_BaseTest):
+    """
 
+**MGWaddr**
+test class:  SNET_MGWaddr
+
+test number: 22
+
+
+    smoke test
+
+tests performed:
+query MGWaddr
+
+ //assertions://
+
+        self.assertTrue('result' in rpl777.keys())
+
+    """
 
     def setUp(self):
         print(" test setUp func here")
@@ -1612,14 +1623,6 @@ class SNET_MGWaddr(SNET_BaseTest):
         self.assertTrue('result' in rpl777.keys() )
 
 
-    def test_APICALL(self):
-        """
-
-        """ #
-        rpl777 = self.getpeers()
-        self.assertTrue('peers' in rpl777.keys())
-
-
     def APICALL(self):
         null=None
         print(2*"\n++++++++++++","test_APICALL")
@@ -1638,7 +1641,24 @@ class SNET_MGWaddr(SNET_BaseTest):
 
 
 class SNET_MGWresponse(SNET_BaseTest):
+    """
 
+**MGWresponse**
+test class:  SNET_MGWresponse
+
+test number: 23
+
+
+    smoke test
+
+tests performed:
+query MGWresponse
+
+ //assertions://
+
+        self.assertTrue('result' in rpl777.keys())
+
+    """
 
     def setUp(self):
         print(" test setUp func here")
@@ -1669,14 +1689,6 @@ class SNET_MGWresponse(SNET_BaseTest):
         self.assertTrue('result' in rpl777.keys() )
 
 
-    def test_APICALL(self):
-        """
-
-        """ #
-        rpl777 = self.getpeers()
-        self.assertTrue('peers' in rpl777.keys())
-
-
     def APICALL(self):
         null=None
         print(2*"\n++++++++++++","test_APICALL")
@@ -1695,7 +1707,24 @@ class SNET_MGWresponse(SNET_BaseTest):
 
 
 class SNET_setmsigpubkey(SNET_BaseTest):
+    """
 
+**setmsigpubkey**
+test class:  SNET_setmsigpubkey
+
+test number: 24
+
+
+    smoke test
+
+tests performed:
+query setmsigpubkey
+
+ //assertions://
+
+        self.assertTrue('result' in rpl777.keys())
+
+    """
 
     def setUp(self):
         print(" test setUp func here")
@@ -1727,14 +1756,6 @@ class SNET_setmsigpubkey(SNET_BaseTest):
         self.assertTrue('result' in rpl777.keys() )
 
 
-    def test_APICALL(self):
-        """
-
-        """ #
-        rpl777 = self.getpeers()
-        self.assertTrue('peers' in rpl777.keys())
-
-
     def APICALL(self):
         null=None
         print(2*"\n++++++++++++","test_APICALL")
@@ -1753,7 +1774,24 @@ class SNET_setmsigpubkey(SNET_BaseTest):
 
 
 class SNET_cosign(SNET_BaseTest):
+    """
 
+**cosign**
+test class:  SNET_cosign
+
+test number: 25
+
+
+    smoke test
+
+tests performed:
+query cosign
+
+ //assertions://
+
+        self.assertTrue('result' in rpl777.keys())
+
+    """
 
     def setUp(self):
         print(" test setUp func here")
@@ -1784,14 +1822,6 @@ class SNET_cosign(SNET_BaseTest):
 
 
 
-    def test_APICALL(self):
-        """
-
-        """ #
-        rpl777 = self.getpeers()
-        self.assertTrue('peers' in rpl777.keys())
-
-
     def APICALL(self):
         null=None
         print(2*"\n++++++++++++","test_APICALL")
@@ -1813,7 +1843,24 @@ class SNET_cosign(SNET_BaseTest):
 
 
 class SNET_cosigned(SNET_BaseTest):
+    """
 
+**cosigned**
+test class:  SNET_cosigned
+
+test number: 26
+
+
+    smoke test
+
+tests performed:
+query cosigned
+
+ //assertions://
+
+        self.assertTrue('result' in rpl777.keys())
+
+    """
 
     def setUp(self):
         print(" test setUp func here")
@@ -1842,13 +1889,6 @@ class SNET_cosigned(SNET_BaseTest):
 
         self.assertTrue('result' in rpl777.keys() )
 
-
-    def test_APICALL(self):
-        """
-
-        """ #
-        rpl777 = self.getpeers()
-        self.assertTrue('peers' in rpl777.keys())
 
 
 
@@ -1887,7 +1927,23 @@ class ___ipComms:
 
 
 class SNET_ping(SNET_BaseTest):
+    """
 
+**ping**
+test class:  SNET_ping
+
+test number: 27
+
+    unit test
+
+tests performed:
+query ping
+
+ //assertions://
+
+        self.assertTrue(rpl777['result'][:16]=='kademlia_ping to'  )
+
+    """
 
     def setUp(self):
         print(" test setUp func here")
@@ -1915,16 +1971,9 @@ class SNET_ping(SNET_BaseTest):
         rpl777 = eval(testReq.text)
         print(2*"\n~~~~~~~~~~~~","SuperNET rpl777y:\n\n", rpl777)
 
+        self.assertTrue(rpl777['result'][:16]=='kademlia_ping to'  )
 
-        self.assertTrue('result' in rpl777.keys() )
 
-
-    def test_APICALL(self):
-        """
-
-        """ #
-        rpl777 = self.getpeers()
-        self.assertTrue('peers' in rpl777.keys())
 
 
     def APICALL(self):
@@ -1945,7 +1994,24 @@ class SNET_ping(SNET_BaseTest):
 
 
 class SNET_pong(SNET_BaseTest):
+    """
 
+**pong**
+test class:  SNET_pong
+
+test number: 28
+
+
+    unit test
+
+tests performed:
+query pong
+
+ //assertions://
+
+         self.assertTrue(rpl777['result'] == None )
+
+    """
 
     def setUp(self):
         print(" test setUp func here")
@@ -1974,15 +2040,8 @@ class SNET_pong(SNET_BaseTest):
         print(2*"\n~~~~~~~~~~~~","SuperNET rpl777y:\n\n", rpl777)
 
 
-        self.assertTrue('result' in rpl777.keys() )
+        self.assertTrue(rpl777['result'] == None )
 
-
-    def test_APICALL(self):
-        """
-
-        """ #
-        rpl777 = self.getpeers()
-        self.assertTrue('peers' in rpl777.keys())
 
 
     def APICALL(self):
@@ -2004,10 +2063,24 @@ class SNET_pong(SNET_BaseTest):
 
 
 class SNET_sendfrag(SNET_BaseTest):
-    """sendfrag
-Sendfrag allows to send files. This function is low level and not practical for manual use. See startxfer for more infos.
-    """#
+    """
 
+**sendfrag**
+test class:  SNET_sendfrag
+
+test number: 29
+
+
+    smoke test
+
+tests performed:
+query sendfrag
+
+ //assertions://
+
+        self.assertTrue('result' in rpl777.keys())
+
+    """
     def setUp(self):
         print(" test setUp func here")
         pass
@@ -2019,8 +2092,10 @@ Sendfrag allows to send files. This function is low level and not practical for 
 
 
     def test_sendfrag(self):
+        """sendfrag
+        Sendfrag allows to send files. This function is low level and not practical for manual use. See startxfer for more infos.
+        """#
         #query_json = {'fragi': '', 'pubkey': '', 'blocksize': '', 'numfrags': '', 'totalcrc': '', 'name': '', 'totallen': '', 'data': '', 'handler': '', 'ipaddr': '', 'requestType': 'sendfrag', 'datacrc': ''}
-
 
         print(2*"\n++++++++++++","test_sendfrag")
         test_RQ_ = {'requestType': 'sendfrag'}
@@ -2037,13 +2112,6 @@ Sendfrag allows to send files. This function is low level and not practical for 
 
         self.assertTrue('result' in rpl777.keys() )
 
-
-    def test_APICALL(self):
-        """
-
-        """ #
-        rpl777 = self.getpeers()
-        self.assertTrue('peers' in rpl777.keys())
 
 
     def APICALL(self):
@@ -2064,7 +2132,24 @@ Sendfrag allows to send files. This function is low level and not practical for 
 
 
 class SNET_gotfrag(SNET_BaseTest):
+    """
 
+**gotfrag**
+test class:  SNET_gotfrag
+
+test number: 30
+
+
+    smoke test
+
+tests performed:
+query gotfrag
+
+ //assertions://
+
+        self.assertTrue('result' in rpl777.keys())
+
+    """
 
     def setUp(self):
         print(" test setUp func here")
@@ -2093,13 +2178,6 @@ class SNET_gotfrag(SNET_BaseTest):
         self.assertTrue('result' in rpl777.keys() )
 
 
-    def test_APICALL(self):
-        """
-
-        """ #
-        rpl777 = self.getpeers()
-        self.assertTrue('peers' in rpl777.keys())
-
 
     def APICALL(self):
         null=None
@@ -2120,24 +2198,24 @@ class SNET_gotfrag(SNET_BaseTest):
 
 
 class SNET_startxfer(SNET_BaseTest):
+    """
 
-    """startxfer
+**startxfer**
+test class:  SNET_startxfer
 
-Startxfer allows to send files. Startxfer splits up a file (or memory buffer) into fixed size blocks. Then it starts parallel transfers using sendfrag. The receiving side receives the sendfrag and dynamically creates a incoming file data structure and sends back a gotfrag. The original sender gets the gotfrag and then sends back the first block that has not been sent yet or that has not been gotfragged yet
-static char *startxfer[] = { (char *)startxfer_func, "startxfer", "V", "fname", "dest", "data", "timeout", "handler", 0 };
-"timeout" is in second.
-"dest" is the IP address of the receiving side.
-"fname" is the name of a hex file. The default location is the "archive" folder. The DATADIR option in SuperNET.conf file allows to choose the location of datas (nb: only relative path is allowed)
-"data" is hex datas to be send. *** further description needed ***
-"handler" *** description needed ***
-"data" and "fname" are mutualy exclusive.
-example
-./BitcoinDarkd SuperNET '{"requestType":"startxfer","fname":"send_msg.txt","dest":"79.245.10.166"}'
-result
-{"result":"pending SuperNET API call","txid":"1316152311343726577"}
+test number: 31
 
-"""#
 
+    smoke test
+
+tests performed:
+query startxfer
+
+ //assertions://
+
+        self.assertTrue('result' in rpl777.keys())
+
+    """
     def setUp(self):
         print(" test setUp func here")
         pass
@@ -2149,6 +2227,23 @@ result
 
 
     def test_startxfer(self):
+
+        """startxfer
+
+    Startxfer allows to send files. Startxfer splits up a file (or memory buffer) into fixed size blocks. Then it starts parallel transfers using sendfrag. The receiving side receives the sendfrag and dynamically creates a incoming file data structure and sends back a gotfrag. The original sender gets the gotfrag and then sends back the first block that has not been sent yet or that has not been gotfragged yet
+    static char *startxfer[] = { (char *)startxfer_func, "startxfer", "V", "fname", "dest", "data", "timeout", "handler", 0 };
+    "timeout" is in second.
+    "dest" is the IP address of the receiving side.
+    "fname" is the name of a hex file. The default location is the "archive" folder. The DATADIR option in SuperNET.conf file allows to choose the location of datas (nb: only relative path is allowed)
+    "data" is hex datas to be send. *** further description needed ***
+    "handler" *** description needed ***
+    "data" and "fname" are mutualy exclusive.
+    example
+    ./BitcoinDarkd SuperNET '{"requestType":"startxfer","fname":"send_msg.txt","dest":"79.245.10.166"}'
+    result
+    {"result":"pending SuperNET API call","txid":"1316152311343726577"}
+
+    """#
 
         print(2*"\n++++++++++++","test_startxfer")
         test_RQ_ = {'requestType': 'startxfer'}
@@ -2167,13 +2262,6 @@ result
 
         # {'result': 'pending SuperNET API call', 'txid': '2466605655551381573'}
 
-
-    def test_APICALL(self):
-        """
-
-        """ #
-        rpl777 = self.getpeers()
-        self.assertTrue('peers' in rpl777.keys())
 
 
     def APICALL(self):
@@ -2194,7 +2282,24 @@ result
 
 
 class SNET_getfile(SNET_BaseTest):
+    """
 
+**getfile**
+test class:  SNET_getfile
+
+test number: 32
+
+
+    smoke test
+
+tests performed:
+query getfile
+
+ //assertions://
+
+        self.assertTrue('result' in rpl777.keys())
+
+    """
 
     def setUp(self):
         print(" test getfile func here")
@@ -2226,13 +2331,6 @@ class SNET_getfile(SNET_BaseTest):
         self.assertTrue('result' in rpl777.keys() )
 
 
-
-    def test_APICALL(self):
-        """
-
-        """ #
-        rpl777 = self.getpeers()
-        self.assertTrue('peers' in rpl777.keys())
 
 
     def APICALL(self):
@@ -2268,7 +2366,24 @@ class ___Kademlia():
     pass
 
 class SNET_store(SNET_BaseTest):
+    """
 
+**store**
+test class:  SNET_store
+
+test number: 33
+
+
+    smoke test
+
+tests performed:
+query store
+
+ //assertions://
+
+        self.assertTrue('result' in rpl777.keys())
+
+    """
 
     def setUp(self):
         print(" test setUp func here")
@@ -2312,7 +2427,6 @@ class SNET_store(SNET_BaseTest):
 
         test_RQ_store['data']=n3
 
-
         payload= self.qComp_777.make_777POST_Request(test_RQ_store)
         print("query json is: ", payload)
         #headers = {'content-type': 'application/json'}
@@ -2323,14 +2437,6 @@ class SNET_store(SNET_BaseTest):
 
 
         self.assertTrue('result' in rpl777.keys() )
-
-
-    def test_APICALL(self):
-        """
-
-        """ #
-        rpl777 = self.getpeers()
-        self.assertTrue('peers' in rpl777.keys())
 
 
     def APICALL(self):
@@ -2352,7 +2458,24 @@ class SNET_store(SNET_BaseTest):
 
 
 class SNET_findvalue(SNET_BaseTest):
+    """
 
+**findvalue**
+test class:  SNET_findvalue
+
+test number: 34
+
+
+    unit test
+
+tests performed:
+query findvalue with a known previously value
+
+ //assertions://
+
+        self.assertTrue('data' in rpl777.keys() )
+
+    """
 
     def setUp(self):
         print(" test setUp func here")
@@ -2391,13 +2514,6 @@ class SNET_findvalue(SNET_BaseTest):
 
 
 
-    def test_APICALL(self):
-        """
-
-        """ #
-        rpl777 = self.getpeers()
-        self.assertTrue('peers' in rpl777.keys())
-
 
     def APICALL(self):
         null=None
@@ -2418,7 +2534,24 @@ class SNET_findvalue(SNET_BaseTest):
 
 
 class SNET_findnode(SNET_BaseTest):
+    """
 
+**findnode**
+test class:  SNET_findnode
+
+test number: 35
+
+
+    smoke test
+
+tests performed:
+query findnode
+
+ //assertions://
+
+        self.assertTrue('result' in rpl777.keys())
+
+    """
 
     def setUp(self):
         print(" test setUp func here")
@@ -2446,13 +2579,6 @@ class SNET_findnode(SNET_BaseTest):
         self.assertTrue('result' in rpl777.keys() )
 
 
-    def test_APICALL(self):
-        """
-
-        """ #
-        rpl777 = self.getpeers()
-        self.assertTrue('peers' in rpl777.keys())
-
 
     def APICALL(self):
         null=None
@@ -2464,6 +2590,8 @@ class SNET_findnode(SNET_BaseTest):
         rpl777 = eval(testReq.text)
         print(2*"\n~~~~~~~~~~~~","SuperNET rpl777y:", rpl777)
         return rpl777
+
+
 ###############################################
 ###############################################
 ###############################################
@@ -2472,7 +2600,25 @@ class SNET_findnode(SNET_BaseTest):
 
 
 class SNET_havenode(SNET_BaseTest):
+    """
 
+**havenode**
+test class:  SNET_havenode
+
+test number: 36
+
+
+    smoke test
+
+tests performed:
+query havenode
+
+ //assertions://
+
+        self.assertTrue('result' in rpl777.keys())
+
+
+    """
 
     def setUp(self):
         print(" test setUp func here")
@@ -2501,13 +2647,6 @@ class SNET_havenode(SNET_BaseTest):
 
         self.assertTrue('result' in rpl777.keys() )
 
-
-    def test_APICALL(self):
-        """
-
-        """ #
-        rpl777 = self.getpeers()
-        self.assertTrue('peers' in rpl777.keys())
 
 
     def APICALL(self):
@@ -2544,7 +2683,6 @@ class SNET_findaddress(SNET_BaseTest):
 
         null = None #  b'{"result":null}' for when null is sent back, which py doenst know
 
-
         test_RQ_getpeers = {'requestType': 'getpeers'}
         payload= self.qComp_777.make_777POST_Request(test_RQ_getpeers)
         print("query json is: ", payload)
@@ -2563,7 +2701,7 @@ class SNET_findaddress(SNET_BaseTest):
             print(srvNXT,"\n")
            #log.msg(1*"\n FINDNODE peer:", srvNXT)
 
-
+        print(srvNXT)
 
         print(2*"\n++++++++++++","test_findaddress")
         testRQ_findaddress = {'requestType': 'findaddress'}
@@ -2583,15 +2721,9 @@ class SNET_findaddress(SNET_BaseTest):
         rpl777 = eval(testReq.text)
         print(2*"\n~~~~~~~~~~~~","SuperNET rpl777y:\n\n", rpl777)
 
-
         self.assertTrue('result' in rpl777.keys() )
 
-    def test_APICALL(self):
-        """
 
-        """ #
-        rpl777 = self.getpeers()
-        self.assertTrue('peers' in rpl777.keys())
 
 
     def APICALL(self):
@@ -2612,7 +2744,24 @@ class SNET_findaddress(SNET_BaseTest):
 
 
 class SNET_havenodeB(SNET_BaseTest):
+    """
 
+**havenodeB**
+test class:  SNET_havenodeB
+
+test number: 36
+
+
+    smoke test
+
+tests performed:
+query havenodeB
+
+ //assertions://
+
+        self.assertTrue('result' in rpl777.keys())
+
+    """
 
     def setUp(self):
         print(" test setUp func here")
@@ -2642,14 +2791,6 @@ class SNET_havenodeB(SNET_BaseTest):
         self.assertTrue('result' in rpl777.keys() )
 
 
-    def test_APICALL(self):
-        """
-
-        """ #
-        rpl777 = self.getpeers()
-        self.assertTrue('peers' in rpl777.keys())
-
-
     def APICALL(self):
         null=None
         print(2*"\n++++++++++++","test_APICALL")
@@ -2670,7 +2811,24 @@ class SNET_havenodeB(SNET_BaseTest):
 
 
 class SNET_puzzles(SNET_BaseTest):
+    """
 
+**puzzles**
+test class:  SNET_puzzles
+
+test number: 36
+
+
+    smoke test
+
+tests performed:
+query puzzles
+
+ //assertions://
+
+        self.assertTrue('result' in rpl777.keys())
+
+    """
 
     def setUp(self):
         print(" test setUp func here")
@@ -2703,14 +2861,6 @@ class SNET_puzzles(SNET_BaseTest):
 
 
 
-    def test_APICALL(self):
-        """
-
-        """ #
-        rpl777 = self.getpeers()
-        self.assertTrue('peers' in rpl777.keys())
-
-
     def APICALL(self):
         null=None
         print(2*"\n++++++++++++","test_APICALL")
@@ -2730,7 +2880,24 @@ class SNET_puzzles(SNET_BaseTest):
 
 
 class SNET_nonces(SNET_BaseTest):
+    """
 
+**nonces**
+test class:  SNET_nonces
+
+test number: 40
+
+
+    smoke test
+
+tests performed:
+query nonces
+
+ //assertions://
+
+        self.assertTrue('result' in rpl777.keys())
+
+    """
 
 
 # static char *nonces[] = { (char *)response_func, "nonces", "V", "reftime", "threshold", "nonces", 0 };
@@ -2759,17 +2926,8 @@ class SNET_nonces(SNET_BaseTest):
         rpl777 = eval(testReq.text)
         print(2*"\n~~~~~~~~~~~~","SuperNET rpl777y:\n\n", rpl777)
 
-
         self.assertTrue('result' in rpl777.keys() )
 
-
-
-    def test_APICALL(self):
-        """
-
-        """ #
-        rpl777 = self.getpeers()
-        self.assertTrue('peers' in rpl777.keys())
 
 
     def APICALL(self):
@@ -2806,7 +2964,24 @@ class ___MofNs():
     pass
 
 class SNET_savefile(SNET_BaseTest):
+    """
 
+**savefile**
+test class:  SNET_savefile
+
+test number: 41
+
+
+    smoke test
+
+tests performed:
+query savefile
+
+ //assertions://
+
+        self.assertTrue('result' in rpl777.keys())
+
+    """
 
     def setUp(self):
         print(" test setUp func here")
@@ -2836,14 +3011,6 @@ class SNET_savefile(SNET_BaseTest):
         self.assertTrue('result' in rpl777.keys() )
 
 
-    def test_APICALL(self):
-        """
-
-        """ #
-        rpl777 = self.getpeers()
-        self.assertTrue('peers' in rpl777.keys())
-
-
     def APICALL(self):
         null=None
         print(2*"\n++++++++++++","test_APICALL")
@@ -2865,7 +3032,24 @@ class SNET_savefile(SNET_BaseTest):
 
 
 class SNET_restorefile(SNET_BaseTest):
-    """ this may require MASSIVE calulation, don't do this in ALL for now  """
+    """
+
+**restorefile**
+test class:  SNET_restorefile
+
+test number: 42
+
+
+    smoke test
+
+tests performed:
+query restorefile
+
+ //assertions://
+
+        self.assertTrue('result' in rpl777.keys())
+
+this may require MASSIVE calulation, don't do this in ALL for now  """
 
     def setUp(self):
         print(" test setUp func here")
@@ -2896,13 +3080,6 @@ class SNET_restorefile(SNET_BaseTest):
         self.assertTrue('result' in rpl777.keys() )
 
 
-    def test_APICALL(self):
-        """
-
-        """ #
-        rpl777 = self.getpeers()
-        self.assertTrue('peers' in rpl777.keys())
-
 
     def APICALL(self):
         null=None
@@ -2922,7 +3099,24 @@ class SNET_restorefile(SNET_BaseTest):
 
 
 class SNET_publish(SNET_BaseTest):
+    """
 
+**publish**
+test class:  SNET_publish
+
+test number: 43
+
+
+    smoke test
+
+tests performed:
+query publish
+
+ //assertions://
+
+        self.assertTrue('result' in rpl777.keys())
+
+    """
 
     def setUp(self):
         print(" test setUp func here")
@@ -2949,14 +3143,6 @@ class SNET_publish(SNET_BaseTest):
 
 
         self.assertTrue('result' in rpl777.keys() )
-
-
-    def test_APICALL(self):
-        """
-
-        """ #
-        rpl777 = self.getpeers()
-        self.assertTrue('peers' in rpl777.keys())
 
 
     def APICALL(self):
@@ -2996,9 +3182,38 @@ class ___Telepathy():
 
 
 class SNET_getpeers(SNET_BaseTest):
-
-
     """
+
+**getpeers**
+test class:  SNET_getpeers
+
+test number: 44
+
+
+    unit test
+
+tests performed:
+query getpeers
+
+ //assertions://
+
+        self.assertTrue('peers' in rpl777.keys())
+
+
+      """#
+
+    def setUp(self):
+        print("SNET_getpeers setUp here- NOP")
+        pass
+
+
+    def runTest(self):
+        self.test_getpeers()
+
+
+    def test_getpeers(self):
+        """
+
     r.apparent_encoding = ascii
     r.headers
     CaseInsensitiveDict({'content-length': '1032', 'access-control-allow-headers': 'Authorization, Content-Type', 'server': 'SuperNET', 'content-type': 'text/html', 'access-control-allow-origin': '*', 'access-control-allow-credentials': 'true', 'access-control-allow-methods': 'GET, POST, OPTIONS'})
@@ -3040,20 +3255,6 @@ class SNET_getpeers(SNET_BaseTest):
       'srvNXT': '1978065578067355462',
       'srvipaddr': '89.212.19.49'}]}
 
-      """#
-
-    def setUp(self):
-        print("SNET_getpeers setUp here- NOP")
-        pass
-
-
-    def runTest(self):
-        self.test_getpeers()
-
-
-    def test_getpeers(self):
-        """
-        self.assertTrue('peers' in rpl777.keys())
 
         """ #
         rpl777 = self.getpeers()
@@ -3073,15 +3274,6 @@ class SNET_getpeers(SNET_BaseTest):
 
 
 
-    def test_APICALL(self):
-        """
-        self.assertTrue('peers' in rpl777.keys())
-
-        """ #
-        rpl777 = self.getpeers()
-        self.assertTrue('peers' in rpl777.keys())
-
-
     def APICALL(self):
         null=None
         print(2*"\n++++++++++++","test_APICALL")
@@ -3095,7 +3287,39 @@ class SNET_getpeers(SNET_BaseTest):
 
 
 class SNET_addcontact(SNET_BaseTest):
-    """addcontact
+    """
+
+**addcontact**
+test class:  SNET_addcontact
+
+test number: 45
+
+
+    function test
+
+tests performed:
+query getpeers, addcontact
+
+ //assertions://
+
+ 	self.assertTrue('peers' in rpl777.keys())
+        self.assertTrue('result' in rpl777.keys() )
+        self.assertTrue('pubkey' in testReq.text )
+
+    """
+    def setUp(self):
+        print(" test setUp func here")
+        pass
+
+
+
+    def runTest(self):
+
+        self.test_addcontact()
+
+
+    def test_addcontact(self):
+        """addcontact
 Contacts are basically a way of mapping long acct numbers to easy to remember handles for use in other API calls. Since they are not stored on HDD you need to put a "contacts":[{"jl777":""}....] field in SuperNET.conf or have the GUI do it on startup. Calling addcontact again will just update the acct. These accts have to be funded with at least 1 NXT I will add a display handle API with a special handle called "me" that shows your private acct and public key.
 Maintaining a contacts list prevents spoofing. Use addcontact to add contacts.
 static char *addcontact[] = { (char *)addcontact_func, "addcontact", "V", "handle", "acct", 0 };
@@ -3106,17 +3330,6 @@ result
 Note that the parameter is handle for addcontact, but contact for removecontact and dispcontact. This is because a handle is a NXT address, whilst a contact is a label for a handle.
 """#
 
-    def setUp(self):
-        print(" test setUp func here")
-        pass
-
-
-
-    def runTest(self):
-        self.test_addcontact()
-
-
-    def test_addcontact(self):
         #query_json = {'handle': '', 'acct': '', 'requestType': 'addcontact'}
 #{"result":"(myHan1) acct.(1978065578067355462) (1978065578067355462) has pubkey.(c269a8b4567c0b3062e6c4be859d845c4b808a405dd03d0d1ac7b4d9cb725b40)"}
 #./BitcoinDarkd  SuperNET '{"requestType":"addcontact","handle":"myHan1","acct":"8128620123513482991"}'
@@ -3156,13 +3369,8 @@ Note that the parameter is handle for addcontact, but contact for removecontact 
         rpl777 = eval(testReq.text)
         print(2*"\n~~~~~~~~~~~~","SuperNET rpl777y:\n\n", rpl777)
 
-
-
         self.assertTrue('result' in rpl777.keys() )
         self.assertTrue('pubkey' in testReq.text )
-
-
-
 
         print(2*"\n++++++++++++","test_dispcontact")
         testRQ_dispcontact = {'requestType': 'dispcontact'}
@@ -3202,14 +3410,6 @@ Note that the parameter is handle for addcontact, but contact for removecontact 
 
 
 
-    def test_APICALL(self):
-        """
-
-        """ #
-        rpl777 = self.getpeers()
-        self.assertTrue('peers' in rpl777.keys())
-
-
     def APICALL(self):
         null=None
         print(2*"\n++++++++++++","test_APICALL")
@@ -3228,16 +3428,30 @@ Note that the parameter is handle for addcontact, but contact for removecontact 
 
 
 class SNET_removecontact(SNET_BaseTest):
-    """removecontact
-Maintaining a contacts list prevents spoofing. Use removecontact to remove contacts.
-static char *removecontact[] = { (char *)removecontact_func, "removecontact", "V", "contact", 0 };
-note; you cannot change a contact directly; you have to remove it and add it again with a different handle.
-example
-./BitcoinDarkd SuperNET '{"requestType":"removecontact","contact":"jl777"}'
-result
-{"result":"handle.(jl777) deleted"}
-"""
+    """
 
+**removecontact**
+test class:  SNET_removecontact
+
+test number: 46
+
+
+    function test
+
+tests performed:
+query getpeers, addcontact, dispcontact, removecontact
+
+ //assertions://
+
+        self.assertTrue('result' in rpl777.keys() )
+        self.assertTrue('pubkey' in testReq.text )
+
+        self.assertTrue('handle' in rpl777.keys() )
+
+        self.assertTrue('result' in rpl777.keys() )
+        self.assertTrue('deleted' in testReq.text )
+
+    """
     def setUp(self):
         print(" test setUp func here")
         pass
@@ -3249,6 +3463,15 @@ result
 
 
     def test_removecontact(self):
+        """removecontact
+        Maintaining a contacts list prevents spoofing. Use removecontact to remove contacts.
+        static char *removecontact[] = { (char *)removecontact_func, "removecontact", "V", "contact", 0 };
+        note; you cannot change a contact directly; you have to remove it and add it again with a different handle.
+        example
+        ./BitcoinDarkd SuperNET '{"requestType":"removecontact","contact":"jl777"}'
+        result
+        {"result":"handle.(jl777) deleted"}
+        """
 
         ##### getpeers
         test_RQ_getpeers = {'requestType': 'getpeers'}
@@ -3330,13 +3553,6 @@ result
         self.assertTrue('deleted' in testReq.text )
 
 
-    def test_APICALL(self):
-        """
-
-        """ #
-        rpl777 = self.getpeers()
-        self.assertTrue('peers' in rpl777.keys())
-
 
     def APICALL(self):
         null=None
@@ -3355,21 +3571,8 @@ result
 ###############################################
 
 
+
 class SNET_dispcontact(SNET_BaseTest):
-    """dispcontact
-with dispcontact you can display your added contacts.
-static char *dispcontact[] = { (char *)dispcontact_func, "dispcontact", "V", "contact", 0 };
-example
-./BitcoinDarkd SuperNET '{"requestType":"dispcontact","contact":"myhandle"}'
-result
-{"handle":"myhandle","acct":"NXT-KK6R-W88P-LA6E-6YR2G","NXT":"5116932371338806423", "pubkey":"a98677f8d351abd58446157dea7208fa2150dec3006ba33a06657af6eaede265"}
-'myhandle' is assigned by default to your private NXT address. 'mypublic' is assigned to your public address.
-example
-Using * will display all current contacts:
-./BitcoinDarkd SuperNET '{"requestType":"dispcontact","contact":"*"}'
-result
-[ {"handle":"myhandle","acct":"NXT-KK6R-W88P-LA6E-6YR2G","NXT":"5116932371338806423","pubkey":"a98677f8d351abd58446157dea7208fa2150dec3006ba33a06657af6eaede265"},
-{"handle":"mypublic","acct":"NXT-NFXU-5SNN-69Q2-7NSGF","NXT":"6249611027680999354","pubkey":"8966bee9e9aef15250c2161133a6a086eeb4739e4077f2c0c4cae3b6fe7bb008"}] """#
 
 
     def setUp(self):
@@ -3383,6 +3586,20 @@ result
 
 
     def test_dispcontact(self):
+        """dispcontact
+    with dispcontact you can display your added contacts.
+    static char *dispcontact[] = { (char *)dispcontact_func, "dispcontact", "V", "contact", 0 };
+    example
+    ./BitcoinDarkd SuperNET '{"requestType":"dispcontact","contact":"myhandle"}'
+    result
+    {"handle":"myhandle","acct":"NXT-KK6R-W88P-LA6E-6YR2G","NXT":"5116932371338806423", "pubkey":"a98677f8d351abd58446157dea7208fa2150dec3006ba33a06657af6eaede265"}
+    'myhandle' is assigned by default to your private NXT address. 'mypublic' is assigned to your public address.
+    example
+    Using * will display all current contacts:
+    ./BitcoinDarkd SuperNET '{"requestType":"dispcontact","contact":"*"}'
+    result
+    [ {"handle":"myhandle","acct":"NXT-KK6R-W88P-LA6E-6YR2G","NXT":"5116932371338806423","pubkey":"a98677f8d351abd58446157dea7208fa2150dec3006ba33a06657af6eaede265"},
+    {"handle":"mypublic","acct":"NXT-NFXU-5SNN-69Q2-7NSGF","NXT":"6249611027680999354","pubkey":"8966bee9e9aef15250c2161133a6a086eeb4739e4077f2c0c4cae3b6fe7bb008"}] """#
 
         ##### getpeers
         test_RQ_getpeers = {'requestType': 'getpeers'}
@@ -3464,13 +3681,6 @@ result
         self.assertTrue('deleted' in testReq.text )
 
 
-    def test_APICALL(self):
-        """
-
-        """ #
-        rpl777 = self.getpeers()
-        self.assertTrue('peers' in rpl777.keys())
-
 
     def APICALL(self):
         null=None
@@ -3490,17 +3700,24 @@ result
 
 
 class SNET_telepathy(SNET_BaseTest):
-    """telepathy
-telepathy conducts telepathic communications (communication without requiring IP addresses to be known).
-static char *telepathy[] = { (char *)telepathy_func, "telepathy", "V", "contact", "id", "type", "attach", 0 };
-contact has to be in your addcontact list. Both sides must have each other as contacts for telepathy to work (but not regular messages).
-id is sequenceid (-1 to set automatically)
-type is the type of transfer: teleport (funds), text (message)... currently type is not required.
-attach is any string (message content)
-example
-./BitcoinDarkd SuperNET '{"requestType":"telepathy","contact":"<privateaddr>","id":"-1","attach":"Are you thinking what I'm thinking?"}'
-"""#
+    """
 
+**telepathy**
+test class:  SNET_telepathy
+
+test number: 48
+
+
+    smoke test
+
+tests performed:
+query telepathy
+
+ //assertions://
+
+        self.assertTrue('result' in rpl777.keys())
+
+    """
     def setUp(self):
         print(" test setUp func here")
         pass
@@ -3512,6 +3729,16 @@ example
 
 
     def test_telepathy(self):
+        """telepathy
+    telepathy conducts telepathic communications (communication without requiring IP addresses to be known).
+    static char *telepathy[] = { (char *)telepathy_func, "telepathy", "V", "contact", "id", "type", "attach", 0 };
+    contact has to be in your addcontact list. Both sides must have each other as contacts for telepathy to work (but not regular messages).
+    id is sequenceid (-1 to set automatically)
+    type is the type of transfer: teleport (funds), text (message)... currently type is not required.
+    attach is any string (message content)
+    example
+    ./BitcoinDarkd SuperNET '{"requestType":"telepathy","contact":"<privateaddr>","id":"-1","attach":"Are you thinking what I'm thinking?"}'
+    """#
         #query_json = {'attach': '', 'contact': '', 'id': '', 'requestType': 'telepathy', 'type': ''}
 
         print(2*"\n++++++++++++","test_telepathy")
@@ -3527,13 +3754,6 @@ example
 
         self.assertTrue('result' in rpl777.keys() )
 
-
-    def test_APICALL(self):
-        """
-
-        """ #
-        rpl777 = self.getpeers()
-        self.assertTrue('peers' in rpl777.keys())
 
 
     def APICALL(self):
@@ -3554,20 +3774,24 @@ example
 
 
 class SNET_getdb(SNET_BaseTest):
-    """getdb
-getdb is 'basically a low level way to do a findvalue'. getdb allows you to check the DHT store of any node remotely by verifying the contents of public.db. You can submit a DHT request and poll all nodes via getdb to make a map of which nodes received what data. This is important for debugging DHT routing.
-static char *getdb[] = { (char *)getdb_func, "getdb", "V", "contact", "id", "key", "dir", "destip", 0 };
-destip is the IP address of the designated node.
-key is the DHT key for the store value, returned by initial store.
+    """
 
-example getdb
-./BitcoinDarkd SuperNET '{"requestType":"getdb","key":"1031470952125437106"}'
-result
+**getdb**
+test class:  SNET_getdb
 
-GETDB.({"requestType":"dbret","NXT":"6249611027680999354","key":"1031470952125437106","data":"c0ffee"}) nxtip.(167.114.2.94) {"requestType":"findnode","NXT":"11910135804814382998","time":1417778040,"key":"6249611027680999354"} search n.16 sorted mydist.0 remoteflag.0 remoteaccess.1 send_kademlia_cmd.havenode srvpubaddr or cp.0x246ab60 dest.7108754351996134253 len.826 -> 1396 send back.([["6249611027680999354", "80.41.56.181", "7777", "0"], ["8894667849638377372", "209.126.70.156", "7777", "1417655983"], ["5624143003089008155", "192.99.212.250", "7777", "1417621062"], ["2131686659786462901", "178.62.185.131", "7777", "1417701576"], ["7067340061344084047", "94.102.50.70", "7777", "1417621060"], ["2278910666471639688", "167.114.2.204", "7777", "1417621061"], ["16193842359787719847", "110.159.238.254", "54433", "1417660922"]]) to 7108754351996134253 FIND.({"result":"kademlia_findnode from.(7108754351996134253) previp.(167.114.2.171) key.(6249611027680999354) datalen.0 txid.5658681211156582719"})
+test number: 49
 
-"""#
 
+    smoke test
+
+tests performed:
+query getdb
+
+ //assertions://
+
+        self.assertTrue('result' in rpl777.keys())
+
+    """
     def setUp(self):
         print(" test setUp func here")
         pass
@@ -3579,6 +3803,19 @@ GETDB.({"requestType":"dbret","NXT":"6249611027680999354","key":"103147095212543
 
 
     def test_getdb(self):
+        """getdb
+    getdb is 'basically a low level way to do a findvalue'. getdb allows you to check the DHT store of any node remotely by verifying the contents of public.db. You can submit a DHT request and poll all nodes via getdb to make a map of which nodes received what data. This is important for debugging DHT routing.
+    static char *getdb[] = { (char *)getdb_func, "getdb", "V", "contact", "id", "key", "dir", "destip", 0 };
+    destip is the IP address of the designated node.
+    key is the DHT key for the store value, returned by initial store.
+
+    example getdb
+    ./BitcoinDarkd SuperNET '{"requestType":"getdb","key":"1031470952125437106"}'
+    result
+
+    GETDB.({"requestType":"dbret","NXT":"6249611027680999354","key":"1031470952125437106","data":"c0ffee"}) nxtip.(167.114.2.94) {"requestType":"findnode","NXT":"11910135804814382998","time":1417778040,"key":"6249611027680999354"} search n.16 sorted mydist.0 remoteflag.0 remoteaccess.1 send_kademlia_cmd.havenode srvpubaddr or cp.0x246ab60 dest.7108754351996134253 len.826 -> 1396 send back.([["6249611027680999354", "80.41.56.181", "7777", "0"], ["8894667849638377372", "209.126.70.156", "7777", "1417655983"], ["5624143003089008155", "192.99.212.250", "7777", "1417621062"], ["2131686659786462901", "178.62.185.131", "7777", "1417701576"], ["7067340061344084047", "94.102.50.70", "7777", "1417621060"], ["2278910666471639688", "167.114.2.204", "7777", "1417621061"], ["16193842359787719847", "110.159.238.254", "54433", "1417660922"]]) to 7108754351996134253 FIND.({"result":"kademlia_findnode from.(7108754351996134253) previp.(167.114.2.171) key.(6249611027680999354) datalen.0 txid.5658681211156582719"})
+
+    """#
         #query_json = {'destip': '', 'requestType': 'getdb', 'dir': '', 'id': '', 'contact': '', 'key': ''}
 
 
@@ -3595,13 +3832,6 @@ GETDB.({"requestType":"dbret","NXT":"6249611027680999354","key":"103147095212543
 
         self.assertTrue('result' in rpl777.keys() )
 
-
-    def test_APICALL(self):
-        """
-
-        """ #
-        rpl777 = self.getpeers()
-        self.assertTrue('peers' in rpl777.keys())
 
 
     def APICALL(self):
@@ -3622,7 +3852,25 @@ GETDB.({"requestType":"dbret","NXT":"6249611027680999354","key":"103147095212543
 
 
 class SNET_sendmessage(SNET_BaseTest):
+    """
 
+**sendmessage**
+test class:  SNET_sendmessage
+
+test number: 50
+
+
+    unit test
+
+tests performed:
+query sendmessage, getpeers
+
+ //assertions://
+ 	self.assertTrue('peers' in rpl777.keys())
+        self.assertTrue('status' in rpl777.keys() )
+        self.assertTrue('sends encrypted sendmessage to' in rpl777['status'] )
+
+    """
 
     def setUp(self):
         print(" test setUp func here")
@@ -3701,14 +3949,6 @@ class SNET_sendmessage(SNET_BaseTest):
 
 
 
-    def test_APICALL(self):
-        """
-
-        """ #
-        rpl777 = self.getpeers()
-        self.assertTrue('peers' in rpl777.keys())
-
-
     def APICALL(self):
         null=None
         print(2*"\n++++++++++++","test_APICALL")
@@ -3764,7 +4004,6 @@ class SNET_sendbinary(SNET_BaseTest):
 
         query_json = {'data': '', 'L': '', 'requestType': 'sendbinary', 'dest': ''}
 
-
         msg = self.msg()
 
         null = None #  b'{"result":null}' for when null is sent back, which py doenst know
@@ -3789,8 +4028,6 @@ class SNET_sendbinary(SNET_BaseTest):
             print(srvNXT)
            #log.msg(1*"\n FINDNODE peer:", srvNXT)
 
-
-
         n1 = self.msg()
         n2 = n1.encode("utf-8")
         n2 = binascii.hexlify(n2)
@@ -3801,7 +4038,6 @@ class SNET_sendbinary(SNET_BaseTest):
         test_RQ_sendbinary['dest'] = srvNXT
         test_RQ_sendbinary ['data'] = binSpam
 
-
         payload= self.qComp_777.make_777POST_Request(test_RQ_sendbinary)
         print("query json is: ", payload)
         #headers = {'content-type': 'application/json'}
@@ -3810,18 +4046,9 @@ class SNET_sendbinary(SNET_BaseTest):
         rpl777 = eval(testReq.text)
         print(2*"\n~~~~~~~~~~~~","SuperNET rpl777y:\n\n", rpl777)
 
-
-
         self.assertTrue('status' in rpl777.keys() )
         self.assertTrue('sends encrypted sendmessage to' in rpl777['status'] )
 
-
-    def test_APICALL(self):
-        """
-
-        """ #
-        rpl777 = self.getpeers()
-        self.assertTrue('peers' in rpl777.keys())
 
 
     def APICALL(self):
@@ -3859,7 +4086,24 @@ class ___Teleport():
     pass
 
 class SNET_maketelepods(SNET_BaseTest):
+    """
 
+**maketelepods**
+test class:  SNET_maketelepods
+
+test number: 52
+
+
+    smoke test
+
+tests performed:
+query maketelepods
+
+ //assertions://
+
+        self.assertTrue('result' in rpl777.keys())
+
+    """
 
     def setUp(self):
         print(" test setUp func here")
@@ -3888,16 +4132,8 @@ class SNET_maketelepods(SNET_BaseTest):
         rpl777 = eval(testReq.text)
         print(2*"\n~~~~~~~~~~~~","SuperNET rpl777y:\n\n", rpl777)
 
-
         self.assertTrue('result' in rpl777.keys() )
 
-
-    def test_APICALL(self):
-        """
-
-        """ #
-        rpl777 = self.getpeers()
-        self.assertTrue('peers' in rpl777.keys())
 
 
     def APICALL(self):
@@ -3916,8 +4152,26 @@ class SNET_maketelepods(SNET_BaseTest):
 ###############################################
 ###############################################
 
-class SNET_telepodacct(SNET_BaseTest):
 
+class SNET_telepodacct(SNET_BaseTest):
+    """
+
+**telepodacct**
+test class:  SNET_telepodacct
+
+test number: 53
+
+
+    smoke test
+
+tests performed:
+query telepodacct
+
+ //assertions://
+
+        self.assertTrue('result' in rpl777.keys())
+
+    """
 
     def setUp(self):
         print(" test setUp func here")
@@ -3945,15 +4199,7 @@ class SNET_telepodacct(SNET_BaseTest):
         rpl777 = eval(testReq.text)
         print(2*"\n~~~~~~~~~~~~","SuperNET rpl777y:\n\n", rpl777)
 
-
         self.assertTrue('result' in rpl777.keys() )
-
-    def test_APICALL(self):
-        """
-
-        """ #
-        rpl777 = self.getpeers()
-        self.assertTrue('peers' in rpl777.keys())
 
 
     def APICALL(self):
@@ -3974,7 +4220,24 @@ class SNET_telepodacct(SNET_BaseTest):
 
 
 class SNET_teleport(SNET_BaseTest):
+    """
 
+**teleport**
+test class:  SNET_teleport
+
+test number: 54
+
+
+    smoke test
+
+tests performed:
+query teleport
+
+ //assertions://
+
+        self.assertTrue('result' in rpl777.keys())
+
+    """
     def setUp(self):
         print(" test setUp func here")
         pass
@@ -3998,14 +4261,6 @@ class SNET_teleport(SNET_BaseTest):
 
         self.assertTrue('result' in rpl777.keys() )
 
-
-
-    def test_APICALL(self):
-        """
-
-        """ #
-        rpl777 = self.getpeers()
-        self.assertTrue('peers' in rpl777.keys())
 
 
     def APICALL(self):
@@ -4045,7 +4300,25 @@ class ___Privatebet():
     pass
 
 class SNET_lotto(SNET_BaseTest, ):
+    """
 
+**lotto**
+test class:  SNET_lotto
+
+test number: 56
+
+
+    smoke test
+
+tests performed:
+query  lotto
+
+ //assertions://
+
+        self.assertTrue('result' in rpl777.keys())
+
+
+    """
 
     def setUp(self):
         print(" test setUp func here")
@@ -4079,14 +4352,6 @@ class SNET_lotto(SNET_BaseTest, ):
 
         self.assertTrue('result' in rpl777.keys() )
 
-
-
-    def test_APICALL(self):
-        """
-
-        """ #
-        rpl777 = self.getpeers()
-        self.assertTrue('peers' in rpl777.keys())
 
 
     def APICALL(self):
@@ -4129,20 +4394,24 @@ class ___Tradebot():
 
 class SNET_allsignals(SNET_BaseTest,  ):
     """
-   test_allsignals
-query json is:  {'requestType': 'allsignals'}
 
-~~~~~~~~~~~~
-~~~~~~~~~~~~ SuperNET rpl777y:
+**allsignals**
+test class:  SNET_allsignals
 
- {'signals': [{'scale': 'price', 'signal': 'firstbid'}, {'scale': 'price', 'signal': 'firstask'}, {'scale': 'price', 'signal': 'lowbid'}, {'scale': 'price', 'signal': 'highask'}, {'scale': 'price', 'signal': 'highbid'}, {'scale': 'price', 'signal': 'lowask'}, {'scale': 'price', 'signal': 'lowbid'}, {'scale': 'price', 'signal': 'lastask'}, {'scale': 'price', 'signal': 'arbbid'}, {'scale': 'price', 'signal': 'arbask'}, {'scale': 'price', 'signal': 'virtbid'}, {'scale': 'price', 'signal': 'virtask'}, {'scale': 'price', 'signal': 'avebid'}, {'scale': 'price', 'signal': 'aveask'}, {'scale': 'price', 'signal': 'median'}, {'scale': 'price', 'signal': 'aveprice'}, {'scale': 'price', 'n': 4, 'signal': 'ohlc'}, {'scale': 'positive', 'signal': 'volume'}]}
-.
-----------------------------------------------------------------------
-Ran 1 test in 0.124s
+test number: 57
 
-OK
 
-    """#
+    unit test
+
+tests performed:
+query allsignals
+
+ //assertions://
+
+        self.assertTrue('signals' in rpl777.keys() )
+        self.assertIsInstance(rpl777['signals'], list  )
+
+    """
     def setUp(self):
         print(" test setUp func here")
         pass
@@ -4161,6 +4430,21 @@ OK
         self.assertIsInstance(rpl777['signals'], list  )
 
     def allsignals(self):
+        """
+       test_allsignals
+    query json is:  {'requestType': 'allsignals'}
+
+    ~~~~~~~~~~~~
+    ~~~~~~~~~~~~ SuperNET rpl777y:
+
+     {'signals': [{'scale': 'price', 'signal': 'firstbid'}, {'scale': 'price', 'signal': 'firstask'}, {'scale': 'price', 'signal': 'lowbid'}, {'scale': 'price', 'signal': 'highask'}, {'scale': 'price', 'signal': 'highbid'}, {'scale': 'price', 'signal': 'lowask'}, {'scale': 'price', 'signal': 'lowbid'}, {'scale': 'price', 'signal': 'lastask'}, {'scale': 'price', 'signal': 'arbbid'}, {'scale': 'price', 'signal': 'arbask'}, {'scale': 'price', 'signal': 'virtbid'}, {'scale': 'price', 'signal': 'virtask'}, {'scale': 'price', 'signal': 'avebid'}, {'scale': 'price', 'signal': 'aveask'}, {'scale': 'price', 'signal': 'median'}, {'scale': 'price', 'signal': 'aveprice'}, {'scale': 'price', 'n': 4, 'signal': 'ohlc'}, {'scale': 'positive', 'signal': 'volume'}]}
+    .
+    ----------------------------------------------------------------------
+    Ran 1 test in 0.124s
+
+    OK
+
+        """#
         null = None
         print(2*"\n++++++++++++","test_allsignals")
         test_RQ_allsignals = {'requestType': 'allsignals'}
@@ -4174,14 +4458,6 @@ OK
 
         return rpl777
 
-
-
-    def test_APICALL(self):
-        """
-
-        """ #
-        rpl777 = self.getpeers()
-        self.assertTrue('peers' in rpl777.keys())
 
 
     def APICALL(self):
@@ -4205,19 +4481,24 @@ OK
 
 class SNET_getsignal(SNET_BaseTest,  ):
     """
-        test_getsignal
-    query json is:  {'resolution': '', 'exchange': '', 'width': '', 'signal': '', 'requestType': 'getsignal', 'baseid': '', 'start': '', 'relid': '', 'rel': '', 'base': ''}
 
-    ~~~~~~~~~~~~
-    ~~~~~~~~~~~~
-    ~~~~~~~~~~~~
-    ~~~~~~~~~~~~
-    ~~~~~~~~~~~~ SuperNET rpl777y:
+**getsignal**
+test class:  SNET_getsignal
 
-     {'error': 'too wide'}
-    F
+test number: 58
 
-    """#
+
+    smoke test
+
+tests performed:
+query getsignal
+
+ //assertions://
+
+        self.assertTrue('result' in rpl777.keys())
+
+    """
+
     def setUp(self):
         print(" test setUp func here")
         pass
@@ -4229,7 +4510,20 @@ class SNET_getsignal(SNET_BaseTest,  ):
 
 
     def test_getsignal(self):
+        """
+            test_getsignal
+        query json is:  {'resolution': '', 'exchange': '', 'width': '', 'signal': '', 'requestType': 'getsignal', 'baseid': '', 'start': '', 'relid': '', 'rel': '', 'base': ''}
 
+        ~~~~~~~~~~~~
+        ~~~~~~~~~~~~
+        ~~~~~~~~~~~~
+        ~~~~~~~~~~~~
+        ~~~~~~~~~~~~ SuperNET rpl777y:
+
+         {'error': 'too wide'}
+        F
+
+        """#
         #query_json = {'requestType': 'getquotes', 'base': '', 'rel': '', 'oldest': '', 'exchange': ''}
 
         null = None
@@ -4264,13 +4558,6 @@ class SNET_getsignal(SNET_BaseTest,  ):
 #         self.assertTrue('result' in rpl777.keys() )
 
 
-    def test_APICALL(self):
-        """
-
-        """ #
-        rpl777 = self.getpeers()
-        self.assertTrue('peers' in rpl777.keys())
-
 
     def APICALL(self):
         null=None
@@ -4291,7 +4578,23 @@ class SNET_getsignal(SNET_BaseTest,  ):
 
 
 class SNET_tradebot(SNET_BaseTest):
+    """
 
+**tradebot**
+test class:  SNET_tradebot
+
+test number: 59
+
+
+    smoke test
+
+tests performed:
+query tradebot
+
+ //assertions://
+
+        self.assertTrue('result' in rpl777.keys())
+    """
 
     def setUp(self):
         print(" test setUp func here")
@@ -4309,8 +4612,6 @@ class SNET_tradebot(SNET_BaseTest):
         null = None
 # {'result': 'invalid tradebot request'}
 
-
-
         print(2*"\n++++++++++++","test_tradebot")
         test_RQ_ = {'requestType': 'tradebot'}
         payload= self.qComp_777.make_777POST_Request(test_RQ_)
@@ -4322,14 +4623,6 @@ class SNET_tradebot(SNET_BaseTest):
         print(2*"\n~~~~~~~~~~~~","SuperNET rpl777y:\n\n", rpl777)
 
         self.assertTrue('result' in rpl777.keys() )
-
-
-    def test_APICALL(self):
-        """
-
-        """ #
-        rpl777 = self.getpeers()
-        self.assertTrue('peers' in rpl777.keys())
 
 
     def APICALL(self):
@@ -4371,7 +4664,24 @@ class ___plugins():
 
 
 class SNET_checkmessages(SNET_BaseTest):
+    """
 
+**checkmessages**
+test class:  SNET_checkmessages
+
+test number: 60
+
+
+    function test
+
+tests performed:
+query getpeers, sendmessage, checkmessages
+
+ //assertions://
+
+        self.assertTrue('result' in rpl777.keys())
+
+    """
 
     def setUp(self):
         print(" test setUp func here")
@@ -4479,14 +4789,6 @@ class SNET_checkmessages(SNET_BaseTest):
 
 
 
-    def test_APICALL(self):
-        """
-
-        """ #
-        rpl777 = self.getpeers()
-        self.assertTrue('peers' in rpl777.keys())
-
-
     def APICALL(self):
         null=None
         print(2*"\n++++++++++++","test_APICALL")
@@ -4506,7 +4808,24 @@ class SNET_checkmessages(SNET_BaseTest):
 
 
 class SNET_syscall(SNET_BaseTest):
+    """
 
+**syscall**
+test class:  SNET_syscall
+
+test number: 61
+
+
+    smoke test
+
+tests performed:
+query syscall
+
+ //assertions://
+
+        self.assertTrue('result' in rpl777.keys())
+
+    """
 
     def setUp(self):
         print(" test setUp func here")
@@ -4535,13 +4854,6 @@ class SNET_syscall(SNET_BaseTest):
         self.assertTrue('result' in rpl777.keys() )
 
 
-    def test_APICALL(self):
-        """
-
-        """ #
-        rpl777 = self.getpeers()
-        self.assertTrue('peers' in rpl777.keys())
-
 
     def APICALL(self):
         null=None
@@ -4562,7 +4874,24 @@ class SNET_syscall(SNET_BaseTest):
 
 
 class SNET_passthru(SNET_BaseTest):
+    """
 
+**passthru**
+test class:  SNET_passthru
+
+test number: 62
+
+
+    smoke test
+
+tests performed:
+query passthru
+
+ //assertions://
+
+        self.assertTrue('result' in rpl777.keys())
+
+    """
 
     def setUp(self):
         print(" test setUp func here")
@@ -4595,14 +4924,6 @@ class SNET_passthru(SNET_BaseTest):
 
 
 
-    def test_APICALL(self):
-        """
-
-        """ #
-        rpl777 = self.getpeers()
-        self.assertTrue('peers' in rpl777.keys())
-
-
     def APICALL(self):
         null=None
         print(2*"\n++++++++++++","test_APICALL")
@@ -4622,7 +4943,24 @@ class SNET_passthru(SNET_BaseTest):
 
 
 class SNET_remote(SNET_BaseTest):
+    """
 
+**remote**
+test class:  SNET_remote
+
+test number: 63
+
+
+    smoke test
+
+tests performed:
+query remote
+
+ //assertions://
+
+        self.assertTrue('result' in rpl777.keys())
+
+    """
 
     def setUp(self):
         print(" test setUp func here")
@@ -4652,16 +4990,6 @@ class SNET_remote(SNET_BaseTest):
             print(2*"\n~~~~~~~~~~~~","error in SuperNET rpl777y:\n\n", rpl777)
         else:
             self.assertTrue('result' in rpl777.keys() )
-
-
-
-
-    def test_APICALL(self):
-        """
-
-        """ #
-        rpl777 = self.getpeers()
-        self.assertTrue('peers' in rpl777.keys())
 
 
     def APICALL(self):
@@ -4735,9 +5063,27 @@ char *assetmap[][2] =
     { "275548135983837356", "VIA" },
 };
 
+    """
 
-**orderbook**
 
+
+
+##############################################
+##############################################
+#
+#	InstantDEX Tests
+#
+#
+##############################################
+##############################################
+
+class SNET_orderbook(SNET_BaseTest, ):
+    """
+    **orderbook**
+
+test number: 64
+
+unit test
 
 test class: SNET_orderbook
 
@@ -4760,212 +5106,7 @@ relid = '5527630'
 query orderbook with  orderbook(baseid, relid)
  //assertions://
           self.assertTrue('NXT' in rpl777.keys() )
-
-
-----------------------------------------------------------------------------------------
-**placeask**
-test class:  SNET_placeask
-
-tests performed:
-place an ask with placeask and test that the api returns 'quoteid'
-baseid = '17554243582654188572'
-relid = '5527630'
-
- //assertions://
-          self.assertTrue('quoteid' in rpl777.keys() )
-----------------------------------------------------------------------------------------
-**ask**
-test class: SNET_ask
-(internal call)
-
-place an ask with ask and test that the api returns 'exchange'
- //assertions://
-        self.assertTrue('exchange' in rpl777.keys() )
-----------------------------------------------------------------------------------------
-**placebid**
-test class: SNET_placebid
-
-tests performed:
-place a bid and test that the api returns 'quoteid'
-baseid = '17554243582654188572'
-relid = '5527630'
-
- //assertions://
-          self.assertTrue('quoteid' in rpl777.keys() )
-
-----------------------------------------------------------------------------------------
-**bid**
-test class: SNET_bid
-(internal call)
-
-place an bid with bid and test that the api returns dict with 'exchange' as key
- //assertions://
-        self.assertTrue('exchange' in rpl777.keys() )
-----------------------------------------------------------------------------------------
-**allorderbooks**
-test class: SNET_allorderbooks
-
-query allorderbooks from the api  test that api returns  dict with 'allorderbooks' as key
-
- //assertions://
-        self.assertTrue('orderbooks' in rpl777.keys() )
-----------------------------------------------------------------------------------------
-**openorders**
-test class: SNET_openorders
-
-query openorders from the api and test that api returns  dict with 'openorders' as key
-
- //assertions://
-        self.assertTrue('openorders' in openorders.keys() )
-----------------------------------------------------------------------------------------
-**respondtx**
-test class: SNET_respondtx
-(internal call)
-
-query api and test that api returns  dict with 'result' as key
-remark: w/o params, the api will return an error as result
-{'result': 'invalid respondtx_func request'}
-
- //assertions://
-        self.assertTrue('result' in rpl777.keys() )
-----------------------------------------------------------------------------------------
-**cancelquote**
-test class: SNET_cancelquote
-
-
-----------------------------------------------------------------------------------------
-**lottostats**
-test class: SNET_lottostats
-
-
-query api and test that api returns  dict with 'result' and 'numtickets' as keys
-
-
- //assertions://
-        self.assertTrue('result' in rpl777.keys() )
-        self.assertTrue('numtickets' in rpl777.keys() )
-        self.assertTrue(rpl777['result']  == 'lottostats')
-----------------------------------------------------------------------------------------
-**tradehistory**
-test class: SNET_tradehistory
-
-query api and test that api returns  dict with 'result' as key
-**FAILS**
-
- //assertions://
-        self.assertTrue('result' in rpl777.keys() )
-
-----------------------------------------------------------------------------------------
-**jumptrades**
-test class: SNET_jumptrades
-
-
-query api and test that api returns  dict with 'result' as key
-**FAILS**
-
- //assertions://
-        self.assertTrue('result' in rpl777.keys() )
-
-
-----------------------------------------------------------------------------------------
-**trollbox**
-SNET_trollbox
-
-query api and test that api returns  dict with 'result' as key
-**FAILS**
-
- //assertions://
-        self.assertTrue('result' in rpl777.keys() )
-{'error': 'command disabled'}
-
-----------------------------------------------------------------------------------------
-**placebid_full**
-test class: SNET_placebid_full
-
-place a bid with placebid, extract the quoteid and the exchange from the reply,
-query 'openorders' and check that the quoteid is contained in the reply,
-then cancel that quoteid
-
-
- //assertions://
-        self.assertTrue('quoteid' in placebid.keys())
-        self.assertTrue(openorder['quoteid'] == self.quoteID)
-        self.assertTrue(cancelquote['result']=='quote cancelled')
-
-
-----------------------------------------------------------------------------------------
-**placeask_full**
-test class: SNET_placebid_full
-
-place an ask with placebid, extract the quoteid and the exchange from the reply,
-query 'openorders' and check that the quoteid is contained in the reply,
-then cancel that quoteid
-
-
- //assertions://
-        self.assertTrue('quoteid' in placebid.keys())
-        self.assertTrue(openorder['quoteid'] == self.quoteID)
-        self.assertTrue(cancelquote['result']=='quote cancelled')
-
-
-
-----------------------------------------------------------------------------------------
-**baseSetup**
-test class: SNET_baseSetup
-
-query settings from api, query getpeers from api, ping the whole whitelist,
-findnode all peers in getpeers, find pongers and havenoders with GUIpoll,
-continue until a minimum of pongers and havenoders or a mixaimum of queries
-
-
-
- //assertions://
-        self.assertTrue('whitelist' in rpl777.keys())
-        self.assertTrue(self.has_pong and self.has_havenode)
-
-
-----------------------------------------------------------------------------------------
-
-
-
-"""#
-    pass
-
-
-
-
-##############################################
-##############################################
-#
-#	InstantDEX Tests
-#
-#
-##############################################
-##############################################
-
-class SNET_orderbook(SNET_BaseTest, ):
     """
-             ./uTest1.py SNET_orderbook
-         test setUp func here
-        query json is:  {'duration': '', 'relid': '5527630', 'baseamount': '', 'automatch': '', 'gui': '', 'timestamp': '', 'price': '0.014', 'volume': '1.00', 'minperc': '', 'baseid': '17554243582654188572', 'requestType': 'placeask', 'relamount': ''}
-
-        ++++++++++++
-        ++++++++++++ orderbook
-        query json is:  {'allfields': '', 'rel': '', 'base': '', 'maxdepth': '', 'baseid': '17554243582654188572', 'requestType': 'orderbook', 'relid': '5527630', 'oldest': '', 'gui': ''}
-
-        ~~~~~~~~~~~~
-        ~~~~~~~~~~~~ SuperNET rpl777y:
-
-         {'obookid': '17554243582651323474', 'NXT': '10501328530345129240', 'timestamp': 1429679438, 'asks': [{'price': '0.00014000', 'volume': '1.00001000'}, {'price': '0.01400000', 'volume': '1.00000000'}, {'price': '0.01400000', 'volume': '1.00000000'}], 'bids': [{'price': '0.01400000', 'volume': '1.00000000'}], 'baseid': '17554243582654188572', 'maxdepth': 0, 'relid': '5527630', 'pair': 'BTC/NXT'}
-        .
-        ----------------------------------------------------------------------
-        Ran 1 test in 0.384s
-
-        OK
-
-    """
-
-
     def setUp(self):
         print(" test setUp func here")
         pass
@@ -5047,6 +5188,28 @@ class SNET_orderbook(SNET_BaseTest, ):
         rpl777 = eval(testReq.text)
         print(2*"\n~~~~~~~~~~~~","SuperNET rpl777y:\n\n", rpl777)
         return rpl777
+    #
+    # """
+    #          ./uTest1.py SNET_orderbook
+    #      test setUp func here
+    #     query json is:  {'duration': '', 'relid': '5527630', 'baseamount': '', 'automatch': '', 'gui': '', 'timestamp': '', 'price': '0.014', 'volume': '1.00', 'minperc': '', 'baseid': '17554243582654188572', 'requestType': 'placeask', 'relamount': ''}
+    #
+    #     ++++++++++++
+    #     ++++++++++++ orderbook
+    #     query json is:  {'allfields': '', 'rel': '', 'base': '', 'maxdepth': '', 'baseid': '17554243582654188572', 'requestType': 'orderbook', 'relid': '5527630', 'oldest': '', 'gui': ''}
+    #
+    #     ~~~~~~~~~~~~
+    #     ~~~~~~~~~~~~ SuperNET rpl777y:
+    #
+    #      {'obookid': '17554243582651323474', 'NXT': '10501328530345129240', 'timestamp': 1429679438, 'asks': [{'price': '0.00014000', 'volume': '1.00001000'}, {'price': '0.01400000', 'volume': '1.00000000'}, {'price': '0.01400000', 'volume': '1.00000000'}], 'bids': [{'price': '0.01400000', 'volume': '1.00000000'}], 'baseid': '17554243582654188572', 'maxdepth': 0, 'relid': '5527630', 'pair': 'BTC/NXT'}
+    #     .
+    #     ----------------------------------------------------------------------
+    #     Ran 1 test in 0.384s
+    #
+    #     OK
+    #
+    # """
+
 
     #{"requestType":"placeask","baseid":"11060861818140490423","relid":"17554243582654188572","volume":"80","price":"0.0065"}'
     #{"result":"success","txid":"15021359626299573695"}
@@ -5068,23 +5231,30 @@ class SNET_orderbook(SNET_BaseTest, ):
     # do absolutely nothing else.
 
 
+
+
 class SNET_placeask(SNET_BaseTest,  ):
     """
 
-       ./uTest1.py SNET_placeask
-     test setUp func here
-    query json is:  {'timestamp': '', 'relamount': '', 'requestType': 'placeask', 'volume': '1.00', 'baseid': '17554243582654188572', 'minperc': '', 'price': '0.014', 'duration': '', 'relid': '5527630', 'gui': '', 'baseamount': '', 'automatch': ''}
-    test_placeask:  {'timestamp': 1429429594, 'baseamount': '100000000', 'relamount': '1400000', 'requestType': 'ask', 'base': 'BTC', 'NXT': '10501328530345129240', 'minperc': 75, 'baseid': '17554243582654188572', 'price': 0.014, 'quoteid': '6191161196027104713', 'duration': 3600, 'exchange': 'InstantDEX', 'age': 0, 'relid': '5527630', 'rel': 'NXT', 'askoffer': 1, 'volume': 1, 'offerNXT': '10501328530345129240'}
-    query json is:  {'timestamp': '', 'relamount': '', 'requestType': 'placeask', 'volume': '1.00001', 'baseid': '17554243582654188572', 'minperc': '', 'price': '0.00014', 'duration': '', 'relid': '5527630', 'gui': '', 'baseamount': '', 'automatch': ''}
-    test_placeask_a:  {'timestamp': 1429429594, 'baseamount': '100001000', 'relamount': '14000', 'requestType': 'ask', 'base': 'BTC', 'NXT': '10501328530345129240', 'minperc': 75, 'baseid': '17554243582654188572', 'price': 0.00014, 'quoteid': '18108422846743312101', 'duration': 3600, 'exchange': 'InstantDEX', 'age': 0, 'relid': '5527630', 'rel': 'NXT', 'askoffer': 1, 'volume': 1.00001, 'offerNXT': '10501328530345129240'}
-    .
-    ----------------------------------------------------------------------
-    Ran 1 test in 0.977s
-
-    OK
+**placeask**
+test class:  SNET_placeask
 
 
-        """#
+
+    unit test
+
+
+test number: 65
+
+tests performed:
+place an ask with placeask and test that the api returns 'quoteid'
+baseid = '17554243582654188572'
+relid = '5527630'
+
+ //assertions://
+          self.assertTrue('quoteid' in rpl777.keys() )
+
+    """
     def setUp(self):
         print(" test setUp func here")
         pass
@@ -5143,24 +5313,47 @@ class SNET_placeask(SNET_BaseTest,  ):
 
         #{"requestType":"placeask","baseid":"11060861818140490423","relid":"17554243582654188572","volume":"80","price":"0.0065"}'
         #{"result":"success","txid":"15021359626299573695"}
+        """
 
+           ./uTest1.py SNET_placeask
+         test setUp func here
+        query json is:  {'timestamp': '', 'relamount': '', 'requestType': 'placeask', 'volume': '1.00', 'baseid': '17554243582654188572', 'minperc': '', 'price': '0.014', 'duration': '', 'relid': '5527630', 'gui': '', 'baseamount': '', 'automatch': ''}
+        test_placeask:  {'timestamp': 1429429594, 'baseamount': '100000000', 'relamount': '1400000', 'requestType': 'ask', 'base': 'BTC', 'NXT': '10501328530345129240', 'minperc': 75, 'baseid': '17554243582654188572', 'price': 0.014, 'quoteid': '6191161196027104713', 'duration': 3600, 'exchange': 'InstantDEX', 'age': 0, 'relid': '5527630', 'rel': 'NXT', 'askoffer': 1, 'volume': 1, 'offerNXT': '10501328530345129240'}
+        query json is:  {'timestamp': '', 'relamount': '', 'requestType': 'placeask', 'volume': '1.00001', 'baseid': '17554243582654188572', 'minperc': '', 'price': '0.00014', 'duration': '', 'relid': '5527630', 'gui': '', 'baseamount': '', 'automatch': ''}
+        test_placeask_a:  {'timestamp': 1429429594, 'baseamount': '100001000', 'relamount': '14000', 'requestType': 'ask', 'base': 'BTC', 'NXT': '10501328530345129240', 'minperc': 75, 'baseid': '17554243582654188572', 'price': 0.00014, 'quoteid': '18108422846743312101', 'duration': 3600, 'exchange': 'InstantDEX', 'age': 0, 'relid': '5527630', 'rel': 'NXT', 'askoffer': 1, 'volume': 1.00001, 'offerNXT': '10501328530345129240'}
+        .
+        ----------------------------------------------------------------------
+        Ran 1 test in 0.977s
+
+        OK
+
+
+        """#
 
 
 
 class SNET_placebid(SNET_BaseTest, ):
-    """ ++++++++++++
-        ++++++++++++ test_placebid
-        query json is:  {'timestamp': '', 'requestType': 'placebid', 'duration': '', 'baseid': '17554243582654188572', 'price': '0.014', 'gui': '', 'minperc': '', 'volume': '1.00', 'baseamount': '', 'relid': '5527630', 'automatch': '', 'relamount': ''}
+    """
 
-        ~~~~~~~~~~~~
-        ~~~~~~~~~~~~ SuperNET rpl777y:
+**placebid**
+test class: SNET_placebid
 
-         {'askoffer': 0, 'base': 'BTC', 'NXT': '10501328530345129240', 'timestamp': 1429356528, 'requestType': 'bid', 'duration': 3600, 'minperc': 75, 'baseid': '17554243582654188572', 'price': 0.014, 'age': 0, 'volume': 1, 'exchange': 'InstantDEX', 'baseamount': '100000000', 'relamount': '1400000', 'rel': 'NXT', 'quoteid': '4435496911217030133', 'offerNXT': '10501328530345129240', 'relid': '5527630'}
-        .
-        ----------------------------------------------------------------------
-        Ran 1 test in 0.391s
 
-        OK
+
+
+    unit test
+
+
+test number: 67
+
+
+tests performed:
+place a bid and test that the api returns 'quoteid'
+baseid = '17554243582654188572'
+relid = '5527630'
+
+ //assertions://
+          self.assertTrue('quoteid' in rpl777.keys() )
 
     """
 
@@ -5241,6 +5434,22 @@ class SNET_placebid(SNET_BaseTest, ):
         rpl777 = eval(testReq.text)
         print(2*"\n~~~~~~~~~~~~","SuperNET rpl777y:\n\n", rpl777)
 
+        """ ++++++++++++
+            ++++++++++++ test_placebid
+            query json is:  {'timestamp': '', 'requestType': 'placebid', 'duration': '', 'baseid': '17554243582654188572', 'price': '0.014', 'gui': '', 'minperc': '', 'volume': '1.00', 'baseamount': '', 'relid': '5527630', 'automatch': '', 'relamount': ''}
+
+            ~~~~~~~~~~~~
+            ~~~~~~~~~~~~ SuperNET rpl777y:
+
+             {'askoffer': 0, 'base': 'BTC', 'NXT': '10501328530345129240', 'timestamp': 1429356528, 'requestType': 'bid', 'duration': 3600, 'minperc': 75, 'baseid': '17554243582654188572', 'price': 0.014, 'age': 0, 'volume': 1, 'exchange': 'InstantDEX', 'baseamount': '100000000', 'relamount': '1400000', 'rel': 'NXT', 'quoteid': '4435496911217030133', 'offerNXT': '10501328530345129240', 'relid': '5527630'}
+            .
+            ----------------------------------------------------------------------
+            Ran 1 test in 0.391s
+
+            OK
+
+        """
+
         return rpl777
 
 
@@ -5253,23 +5462,22 @@ class SNET_placebid(SNET_BaseTest, ):
 
 class SNET_allorderbooks(SNET_BaseTest, ):
     """
-   ++++++++++++
-++++++++++++ test_allorderbooks
-query json is:  {'requestType': 'allorderbooks'}
 
-~~~~~~~~~~~~
-~~~~~~~~~~~~ SuperNET rpl777y:
-
- {'orderbooks': [{'rel': 'NXT', 'exchange': 'InstantDEX', 'relid': '5527630', 'type': 'bids', 'baseid': '17554243582654188572', ....
-
- .
-----------------------------------------------------------------------
-Ran 1 test in 0.214s
-
-OK
+**allorderbooks**
+test class: SNET_allorderbooks
 
 
-    """#
+    unit test
+
+
+test number: 67
+
+query allorderbooks from the api  test that api returns  dict with 'allorderbooks' as key
+
+ //assertions://
+        self.assertTrue('orderbooks' in rpl777.keys() )
+
+    """
     def setUp(self):
         print(" test setUp func here")
         pass
@@ -5309,6 +5517,25 @@ OK
         rpl777 = eval(testReq.text)
         print(2*"\n~~~~~~~~~~~~","SuperNET rpl777y:\n\n", rpl777)
 
+        """
+           ++++++++++++
+        ++++++++++++ test_allorderbooks
+        query json is:  {'requestType': 'allorderbooks'}
+
+        ~~~~~~~~~~~~
+        ~~~~~~~~~~~~ SuperNET rpl777y:
+
+         {'orderbooks': [{'rel': 'NXT', 'exchange': 'InstantDEX', 'relid': '5527630', 'type': 'bids', 'baseid': '17554243582654188572', ....
+
+         .
+        ----------------------------------------------------------------------
+        Ran 1 test in 0.214s
+
+        OK
+
+
+            """#
+
         return rpl777
 
 
@@ -5318,24 +5545,22 @@ OK
 
 class SNET_openorders(SNET_BaseTest, ):
     """
-       ++++++++++++
-    ++++++++++++ test_openorders
-    query json is:  {'requestType': 'openorders'}
 
-    ~~~~~~~~~~~~
-    ~~~~~~~~~~~~ SuperNET rpl777y:
+**openorders**
 
-     {'openorders': [{'NXT': '10501328530345129240', 'offerNXT': '10501328530345129240', 'rel': 'NXT', 'price': 0.014, 'askoffer': 0, 'exchange': 'InstantDEX', 'base': 'BTC', 'iQ': '139904608199392', 'relamount': '1400000', 'relid': '5527630', 'baseamount': '100000000', 'age': 713, 'duration': 3600, 'baseid': '17554243582654188572', 'quoteid': '4435496911217030133', 'volume': 1, 'timestamp': 1429356528, 'requestType': 'makeoffer3', 'minperc': 75}, {'NXT': '10501328530345129240', 'offerNXT': '10501328530345129240', 'rel': 'NXT', 'price': 100, 'askoffer': 1, 'exchange': 'InstantDEX', 'base': '1000BURST', 'iQ': '139904602575664', 'relamount': '220000000000', 'relid': '5527630', 'baseamount': '2200000000', 'age': 2195, 'duration': 3600, 'baseid': '251006016744564741', 'quoteid': '17155999699314532503', 'volume': 22, 'timestamp': 1429355046, 'requestType': 'makeoffer3', 'minperc': 75}, {'NXT': '10501328530345129240', 'offerNXT': '10501328530345129240', 'rel': 'NXT', 'price': 100, 'askoffer': 1, 'exchange': 'InstantDEX', 'base': '1000BURST', 'iQ': '139904602575752', 'relamount': '220000000000', 'relid': '5527630', 'baseamount': '2200000000', 'age': 2226, 'duration': 3600, 'baseid': '251006016744564741', 'quoteid': '14797648200742204788', 'volume': 22, 'timestamp': 1429355015, 'requestType': 'makeoffer3', 'minperc': 75}, {'NXT': '10501328530345129240', 'offerNXT': '10501328530345129240', 'rel': 'NXT', 'price': 100, 'askoffer': 1, 'exchange': 'InstantDEX', 'base': '1000BURST', 'iQ': '139904602575840', 'relamount': '220000000000', 'relid': '5527630', 'baseamount': '2200000000', 'age': 2236, 'duration': 3600, 'baseid': '251006016744564741', 'quoteid': '17475451133874014289', 'volume': 22, 'timestamp': 1429355005, 'requestType': 'makeoffer3', 'minperc': 75}, {'NXT': '10501328530345129240', 'offerNXT': '10501328530345129240', 'rel': 'NXT', 'price': 100, 'askoffer': 1, 'exchange': 'InstantDEX', 'base': '1000BURST', 'iQ': '139904602576192', 'relamount': '220000000000', 'relid': '5527630', 'baseamount': '2200000000', 'age': 2790, 'duration': 3600, 'baseid': '251006016744564741', 'quoteid': '8308605579349557750', 'volume': 22, 'timestamp': 1429354451, 'requestType': 'makeoffer3', 'minperc': 75}]}
-    .
-    ----------------------------------------------------------------------
-    Ran 1 test in 0.150s
+test class: SNET_openorders
 
-    OK
+    unit test
 
 
-        """#
+test number: 68
 
+query openorders from the api and test that api returns  dict with 'openorders' as key
 
+ //assertions://
+        self.assertTrue('openorders' in openorders.keys() )
+
+    """
     def setUp(self):
         print(" test setUp func here")
         pass
@@ -5362,7 +5587,6 @@ class SNET_openorders(SNET_BaseTest, ):
 
         openorders = self.openorders()
 
-
         self.assertTrue('openorders' in openorders.keys() )
 
         openordersLi=openorders['openorders']
@@ -5383,6 +5607,25 @@ class SNET_openorders(SNET_BaseTest, ):
         rpl777 = eval(testReq.text)
         #print(2*"\n~~~~~~~~~~~~","SuperNET rpl777y:\n\n", rpl777)
 
+        """
+           ++++++++++++
+        ++++++++++++ test_openorders
+        query json is:  {'requestType': 'openorders'}
+
+        ~~~~~~~~~~~~
+        ~~~~~~~~~~~~ SuperNET rpl777y:
+
+         {'openorders': [{'NXT': '10501328530345129240', 'offerNXT': '10501328530345129240', 'rel': 'NXT', 'price': 0.014, 'askoffer': 0, 'exchange': 'InstantDEX', 'base': 'BTC', 'iQ': '139904608199392', 'relamount': '1400000', 'relid': '5527630', 'baseamount': '100000000', 'age': 713, 'duration': 3600, 'baseid': '17554243582654188572', 'quoteid': '4435496911217030133', 'volume': 1, 'timestamp': 1429356528, 'requestType': 'makeoffer3', 'minperc': 75}, {'NXT': '10501328530345129240', 'offerNXT': '10501328530345129240', 'rel': 'NXT', 'price': 100, 'askoffer': 1, 'exchange': 'InstantDEX', 'base': '1000BURST', 'iQ': '139904602575664', 'relamount': '220000000000', 'relid': '5527630', 'baseamount': '2200000000', 'age': 2195, 'duration': 3600, 'baseid': '251006016744564741', 'quoteid': '17155999699314532503', 'volume': 22, 'timestamp': 1429355046, 'requestType': 'makeoffer3', 'minperc': 75}, {'NXT': '10501328530345129240', 'offerNXT': '10501328530345129240', 'rel': 'NXT', 'price': 100, 'askoffer': 1, 'exchange': 'InstantDEX', 'base': '1000BURST', 'iQ': '139904602575752', 'relamount': '220000000000', 'relid': '5527630', 'baseamount': '2200000000', 'age': 2226, 'duration': 3600, 'baseid': '251006016744564741', 'quoteid': '14797648200742204788', 'volume': 22, 'timestamp': 1429355015, 'requestType': 'makeoffer3', 'minperc': 75}, {'NXT': '10501328530345129240', 'offerNXT': '10501328530345129240', 'rel': 'NXT', 'price': 100, 'askoffer': 1, 'exchange': 'InstantDEX', 'base': '1000BURST', 'iQ': '139904602575840', 'relamount': '220000000000', 'relid': '5527630', 'baseamount': '2200000000', 'age': 2236, 'duration': 3600, 'baseid': '251006016744564741', 'quoteid': '17475451133874014289', 'volume': 22, 'timestamp': 1429355005, 'requestType': 'makeoffer3', 'minperc': 75}, {'NXT': '10501328530345129240', 'offerNXT': '10501328530345129240', 'rel': 'NXT', 'price': 100, 'askoffer': 1, 'exchange': 'InstantDEX', 'base': '1000BURST', 'iQ': '139904602576192', 'relamount': '220000000000', 'relid': '5527630', 'baseamount': '2200000000', 'age': 2790, 'duration': 3600, 'baseid': '251006016744564741', 'quoteid': '8308605579349557750', 'volume': 22, 'timestamp': 1429354451, 'requestType': 'makeoffer3', 'minperc': 75}]}
+        .
+        ----------------------------------------------------------------------
+        Ran 1 test in 0.150s
+
+        OK
+
+
+            """#
+
+
         return rpl777
 
 
@@ -5390,9 +5633,23 @@ class SNET_openorders(SNET_BaseTest, ):
 class SNET_respondtx(SNET_BaseTest, ):
     """
 
-        respondtx and processutx are internal trade negotiation API's and can be ignored, there will be other internal API calls too, like "bid" and "ask"
+**respondtx**
+test class: SNET_respondtx
+(internal call)
 
-    """#
+    smoke test
+
+
+test number: 69
+
+query api and test that api returns  dict with 'result' as key
+remark: w/o params, the api will return an error as result
+{'result': 'invalid respondtx_func request'}
+
+ //assertions://
+        self.assertTrue('result' in rpl777.keys() )
+
+    """
 
     def setUp(self):
         print(" test setUp func here")
@@ -5429,27 +5686,41 @@ class SNET_respondtx(SNET_BaseTest, ):
         testReq = requests.post(self.url, data=json.dumps(payload), headers=self.headers)
         rpl777 = eval(testReq.text)
         print(2*"\n~~~~~~~~~~~~","SuperNET rpl777y:\n\n", rpl777)
+
+        """
+
+            respondtx and processutx are internal trade negotiation API's and can be ignored, there will be other internal API calls too, like "bid" and "ask"
+
+        """#
+
         return rpl777
 
 
 
 
 class SNET_bid(SNET_BaseTest,):
-    """++++++++++++
-        ++++++++++++ test_bid
-        query json is:  {'type': '', 'baseid': '11060861818140490423', 'baseamount': '', 'relid': '17554243582654188572', 'timestamp': '', 'minperc': '', 'price': '1', 'volume': '1', 'requestType': 'bid', 'duration': '', 'gui': '', 'relamount': '', 'automatch': ''}
+    """
 
-        ~~~~~~~~~~~~
-        ~~~~~~~~~~~~ SuperNET rpl777y:
+**bid**
+test class:  SNET_bid
 
-         {'baseid': '11060861818140490423', 'duration': 3600, 'exchange': 'InstantDEX', 'relid': '17554243582654188572', 'rel': 'BTC', 'timestamp': 1429359243, 'minperc': 75, 'quoteid': '5273789868954063273', 'age': 0, 'price': 1, 'baseamount': '100000000', 'volume': 1, 'requestType': 'bid', 'NXT': '10501328530345129240', 'askoffer': 0, 'base': 'BTCD', 'relamount': '100000000', 'offerNXT': '10501328530345129240'}
-        .
-        ----------------------------------------------------------------------
-        Ran 1 test in 0.328s
 
-        OK
 
-        """#
+    unit test
+
+
+test number: 70
+
+tests performed:
+place an bid with  bid and test that the api returns 'quoteid'
+baseid = '17554243582654188572'
+relid = '5527630'
+
+ //assertions://
+          self.assertTrue('exchange' in rpl777.keys() )
+
+
+    """
 
     def setUp(self):
         print(" test setUp func here")
@@ -5501,6 +5772,27 @@ class SNET_bid(SNET_BaseTest,):
         testReq = requests.post(self.url, data=json.dumps(payload), headers=self.headers)
         rpl777 = eval(testReq.text)
         print(2*"\n~~~~~~~~~~~~","SuperNET rpl777y:\n\n", rpl777)
+
+
+
+
+        """++++++++++++
+            ++++++++++++ test_bid
+            query json is:  {'type': '', 'baseid': '11060861818140490423', 'baseamount': '', 'relid': '17554243582654188572', 'timestamp': '', 'minperc': '', 'price': '1', 'volume': '1', 'requestType': 'bid', 'duration': '', 'gui': '', 'relamount': '', 'automatch': ''}
+
+            ~~~~~~~~~~~~
+            ~~~~~~~~~~~~ SuperNET rpl777y:
+
+             {'baseid': '11060861818140490423', 'duration': 3600, 'exchange': 'InstantDEX', 'relid': '17554243582654188572', 'rel': 'BTC', 'timestamp': 1429359243, 'minperc': 75, 'quoteid': '5273789868954063273', 'age': 0, 'price': 1, 'baseamount': '100000000', 'volume': 1, 'requestType': 'bid', 'NXT': '10501328530345129240', 'askoffer': 0, 'base': 'BTCD', 'relamount': '100000000', 'offerNXT': '10501328530345129240'}
+            .
+            ----------------------------------------------------------------------
+            Ran 1 test in 0.328s
+
+            OK
+
+            """#
+
+
         return rpl777
 
         #ask and bid are internal calls
@@ -5513,22 +5805,26 @@ class SNET_bid(SNET_BaseTest,):
 class SNET_ask(SNET_BaseTest,):
     """
 
-    ++++++++++++
-    ++++++++++++ test_ask
-    query json is:  {'minperc': '', 'timestamp': '', 'relamount': '', 'type': '', 'baseamount': '', 'requestType': 'ask', 'duration': '', 'baseid': '11060861818140490423', 'volume': '1', 'relid': '17554243582654188572', 'automatch': '', 'gui': '', 'price': '1'}
-
-    ~~~~~~~~~~~~
-    ~~~~~~~~~~~~ SuperNET rpl777y:
-
-     {'minperc': 75, 'relid': '17554243582654188572', 'exchange': 'InstantDEX', 'relamount': '100000000', 'offerNXT': '10501328530345129240', 'rel': 'BTC', 'askoffer': 1, 'timestamp': 1429359379, 'requestType': 'ask', 'baseamount': '100000000', 'quoteid': '2136393601792993271', 'duration': 3600, 'NXT': '10501328530345129240', 'volume': 1, 'base': 'BTCD', 'age': 0, 'price': 1, 'baseid': '11060861818140490423'}
-    .
-    ----------------------------------------------------------------------
-    Ran 1 test in 0.271s
-
-    OK
+**ask**
+test class:  SNET_ask
 
 
-        """#
+
+    unit test
+
+
+test number: 71
+
+tests performed:
+place an ask with  ask and test that the api returns 'quoteid'
+baseid = '17554243582654188572'
+relid = '5527630'
+
+ //assertions://
+          self.assertTrue('exchange' in rpl777.keys() )
+
+
+    """
 
     def setUp(self):
         print(" test setUp func here")
@@ -5586,25 +5882,49 @@ class SNET_ask(SNET_BaseTest,):
         rpl777 = eval(testReq.text)
         print(2*"\n~~~~~~~~~~~~","SuperNET rpl777y:\n\n", rpl777)
 
+        """
+
+        ++++++++++++
+        ++++++++++++ test_ask
+        query json is:  {'minperc': '', 'timestamp': '', 'relamount': '', 'type': '', 'baseamount': '', 'requestType': 'ask', 'duration': '', 'baseid': '11060861818140490423', 'volume': '1', 'relid': '17554243582654188572', 'automatch': '', 'gui': '', 'price': '1'}
+
+        ~~~~~~~~~~~~
+        ~~~~~~~~~~~~ SuperNET rpl777y:
+
+         {'minperc': 75, 'relid': '17554243582654188572', 'exchange': 'InstantDEX', 'relamount': '100000000', 'offerNXT': '10501328530345129240', 'rel': 'BTC', 'askoffer': 1, 'timestamp': 1429359379, 'requestType': 'ask', 'baseamount': '100000000', 'quoteid': '2136393601792993271', 'duration': 3600, 'NXT': '10501328530345129240', 'volume': 1, 'base': 'BTCD', 'age': 0, 'price': 1, 'baseid': '11060861818140490423'}
+        .
+        ----------------------------------------------------------------------
+        Ran 1 test in 0.271s
+
+        OK
+
+
+            """#
+
         return rpl777
 
 
 class SNET_cancelquote(SNET_BaseTest, ):
     """
-        ++++++++++++
-    ++++++++++++ test_cancelquote
-    query json is:  {'quoteid': '123', 'requestType': 'cancelquote'}
 
-    ~~~~~~~~~~~~
-    ~~~~~~~~~~~~ SuperNET rpl777y: {'result': 'you can only cancel your InstantDEX orders'}
-    .
-    ----------------------------------------------------------------------
-    Ran 1 test in 0.140s
-
-    OK
+**cancelquote**
+test class: SNET_cancelquote
 
 
-        """#
+
+test number: 72
+
+
+    smoke test
+
+tests performed:
+query remote
+
+ //assertions://
+
+        self.assertTrue('result' in rpl777.keys())
+
+    """
 
     def setUp(self):
         print(" test cancelquote setUp func here")
@@ -5642,30 +5962,51 @@ class SNET_cancelquote(SNET_BaseTest, ):
         testReq = requests.post(self.url, data=json.dumps(payload), headers=self.headers)
         rpl777 = eval(testReq.text)
         print(2*"\n~~~~~~~~~~~~","SuperNET rpl777y:", rpl777)
+
+
+
+        """
+            ++++++++++++
+        ++++++++++++ test_cancelquote
+        query json is:  {'quoteid': '123', 'requestType': 'cancelquote'}
+
+        ~~~~~~~~~~~~
+        ~~~~~~~~~~~~ SuperNET rpl777y: {'result': 'you can only cancel your InstantDEX orders'}
+        .
+        ----------------------------------------------------------------------
+        Ran 1 test in 0.140s
+
+        OK
+
+
+            """#
+
+
         return rpl777
 
 
 
 class SNET_lottostats(SNET_BaseTest, ):
     """
-         ./uTest1.py SNET_lottostats
-     test lottostats setUp func here
 
-    ++++++++++++
-    ++++++++++++ lottostats call
-    query json is:  {'timestamp': '', 'requestType': 'lottostats'}
+**lottostats**
 
-    ~~~~~~~~~~~~
-    ~~~~~~~~~~~~ SuperNET rpl777y:
+test class: SNET_lottostats
 
-     {'NXT': '10501328530345129240', 'odds': '0.00', 'result': 'lottostats', 'totaltickets': '200', 'numtickets': '0', 'topMM': '13632947951045332845'}
-    .
-    ----------------------------------------------------------------------
-    Ran 1 test in 0.263s
 
-    OK
+test number: 73
 
-    """#
+	unit test
+
+query api and test that api returns  dict with 'result' and 'numtickets' as keys
+
+
+ //assertions://
+        self.assertTrue('result' in rpl777.keys() )
+        self.assertTrue('numtickets' in rpl777.keys() )
+        self.assertTrue(rpl777['result']  == 'lottostats')
+
+    """
     def setUp(self):
         print(" test lottostats setUp func here")
         pass
@@ -5703,36 +6044,49 @@ class SNET_lottostats(SNET_BaseTest, ):
         testReq = requests.post(self.url, data=json.dumps(payload), headers=self.headers)
         rpl777 = eval(testReq.text)
         print(2*"\n~~~~~~~~~~~~","SuperNET rpl777y:\n\n", rpl777)
+
+        """
+             ./uTest1.py SNET_lottostats
+         test lottostats setUp func here
+
+        ++++++++++++
+        ++++++++++++ lottostats call
+        query json is:  {'timestamp': '', 'requestType': 'lottostats'}
+
+        ~~~~~~~~~~~~
+        ~~~~~~~~~~~~ SuperNET rpl777y:
+
+         {'NXT': '10501328530345129240', 'odds': '0.00', 'result': 'lottostats', 'totaltickets': '200', 'numtickets': '0', 'topMM': '13632947951045332845'}
+        .
+        ----------------------------------------------------------------------
+        Ran 1 test in 0.263s
+
+        OK
+
+        """#
+
         return rpl777
 
 
 
 class SNET_tradehistory(SNET_BaseTest, ):
     """
-       azure@boxfish:~/workbench/nxtDev/snappy$ ./uTest1.py SNET_tradehistory
-     test tradehistory setUp func here
 
-    ++++++++++++
-    ++++++++++++ tradehistory call
-    query json is:  {'requestType': 'tradehistory', 'timestamp': ''}
+**tradehistory**
+test class: SNET_tradehistory
 
-    ~~~~~~~~~~~~
-    ~~~~~~~~~~~~ SuperNET rpl777y:
 
-     {}
-    F
-    ======================================================================
-    FAIL: runTest (__main__.SNET_tradehistory)
-    ----------------------------------------------------------------------
-    Traceback (most recent call last):
-      File "./uTest1.py", line 3741, in runTest
-        self.test_tradehistory()
-      File "./uTest1.py", line 3746, in test_tradehistory
+test number: 74
+
+	smoke test
+
+query api and test that api returns  dict with 'result' as key
+**FAILS**
+
+ //assertions://
         self.assertTrue('result' in rpl777.keys() )
-    AssertionError: False is not true
 
-    ----------------------------------------------------------------------
-    Ran 1 test in 0.181s
+
 
     FAILED (failures=1)
 
@@ -5780,18 +6134,21 @@ class SNET_tradehistory(SNET_BaseTest, ):
 
 class SNET_jumptrades(SNET_BaseTest, ):
     """
-        ./uTest1.py SNET_jumptrades
-     test jumptrades setUp func here
 
-    ++++++++++++
-    ++++++++++++ jumptrades call
-    query json is:  {'requestType': 'jumptrades'}
+**jumptrades**
+test class: SNET_jumptrades
 
-    ~~~~~~~~~~~~
-    ~~~~~~~~~~~~ SuperNET rpl777y:
 
-     {}
-    F
+test number: 75
+
+	smoke test
+
+query api and test that api returns  dict with 'result' as key
+**FAILS**
+
+ //assertions://
+        self.assertTrue('result' in rpl777.keys() )
+
 
 
     """#
@@ -5832,6 +6189,67 @@ class SNET_jumptrades(SNET_BaseTest, ):
         print(2*"\n~~~~~~~~~~~~","SuperNET rpl777y:\n\n", rpl777)
         return rpl777
 
+
+
+class SNET_trollbox(SNET_BaseTest):
+    """
+
+**trollbox**
+SNET_trollbox
+
+
+test number: 76
+
+	smoke test
+
+
+query api and test that api returns  dict with 'result' as key
+**FAILS**
+
+ //assertions://
+        self.assertTrue('result' in rpl777.keys() )
+{'error': 'command disabled'}
+
+
+    """#
+
+    def setUp(self):
+        print(" test setUp func here")
+        pass
+
+    def runTest(self):
+        self.test_trollbox()
+
+    def test_trollbox(self):
+        """ test_trollbox
+
+            call sequence:
+
+            1.
+
+
+            ---------
+
+            asserts
+
+            1.  reply has
+
+
+        """
+        rpl777 = self.trollbox()
+        print(rpl777)
+        self.assertTrue('result' in rpl777.keys() )
+
+    def trollbox(self):
+        null = None #  b'{"result":null}' for when null is sent back, which py doenst know
+        print(2*"\n++++++++++++","test_trollbox")
+        test_RQ_trollbox = {'requestType': 'trollbox'}
+        payload= self.qComp_777.make_777POST_Request(test_RQ_trollbox)
+        print("query json is: ", payload)
+        testReq = requests.post(self.url, data=json.dumps(payload), headers=self.headers)
+        rpl777 = eval(testReq.text)
+        print(2*"\n~~~~~~~~~~~~","SuperNET rpl777y:\n\n", rpl777)
+        return rpl777
 
 
 class SNET_makeoffer(SNET_BaseTest, ):
@@ -5950,64 +6368,6 @@ class SNET_makeoffer3(SNET_BaseTest):
 
 
 
-class SNET_trollbox(SNET_BaseTest):
-    """
-    #static char *trollbox[] = { (char *)trollbox_func, "trollbox", "V", "post", "whaleindex", 0 };
-     ./uTest1.py SNET_trollbox
-     test setUp func here
-
-    ++++++++++++
-    ++++++++++++ test_trollbox
-    query json is:  None
-
-    ~~~~~~~~~~~~
-    ~~~~~~~~~~~~ SuperNET rpl777y:
-
-     {'error': 'command disabled'}
-    {'error': 'command disabled'}
-    F
-
-    """#
-
-    def setUp(self):
-        print(" test setUp func here")
-        pass
-
-    def runTest(self):
-        self.test_trollbox()
-
-    def test_trollbox(self):
-        """ test_trollbox
-
-            call sequence:
-
-            1.
-
-
-            ---------
-
-            asserts
-
-            1.  reply has
-
-
-        """
-        rpl777 = self.trollbox()
-        print(rpl777)
-        self.assertTrue('result' in rpl777.keys() )
-
-    def trollbox(self):
-        null = None #  b'{"result":null}' for when null is sent back, which py doenst know
-        print(2*"\n++++++++++++","test_trollbox")
-        test_RQ_trollbox = {'requestType': 'trollbox'}
-        payload= self.qComp_777.make_777POST_Request(test_RQ_trollbox)
-        print("query json is: ", payload)
-        testReq = requests.post(self.url, data=json.dumps(payload), headers=self.headers)
-        rpl777 = eval(testReq.text)
-        print(2*"\n~~~~~~~~~~~~","SuperNET rpl777y:\n\n", rpl777)
-        return rpl777
-
-
     #########################
     #########################
     #########################
@@ -6025,7 +6385,110 @@ class SNET_trollbox(SNET_BaseTest):
 class ___composites():
     pass
 
+
+class SNET_placebid_full(SNET_BaseTest, ):
+    """
+
+
+**placebid_full**
+
+test class: SNET_placebid_full
+
+
+test number: 77
+
+	integration test
+
+
+place a bid with placebid, extract the quoteid and the exchange from the reply,
+query 'openorders' and check that the quoteid is contained in the reply,
+then cancel that quoteid
+
+
+ //assertions://
+        self.assertTrue('quoteid' in placebid.keys())
+        self.assertTrue(openorder['quoteid'] == self.quoteID)
+        self.assertTrue(cancelquote['result']=='quote cancelled')
+
+    """
+
+    SNET_placebid = SNET_placebid
+    SNET_orderbook = SNET_orderbook
+    SNET_openorders = SNET_openorders
+    SNET_cancelquote = SNET_cancelquote
+
+    def setUp(self):
+        print("test placebid")
+
+    def runTest(self):
+        self.test_placebid()
+
+
+
+    def test_placebid(self):
+        null = None
+
+        price = '0.014'
+        volume = '0.010'
+        baseid = '17554243582654188572'
+        relid = '5527630'
+        placebid = self.SNET_placebid.placebid(self, volume,price,baseid,relid)
+
+        self.assertTrue('quoteid' in placebid.keys())
+        self.quoteID=placebid['quoteid']
+        self.exchange = placebid['exchange']
+
+        time.sleep(0.2)
+        orderbook = self.SNET_orderbook.orderbook(self, baseid,relid)
+
+        self.assertTrue('obookid' in orderbook.keys())
+
+        self.bids = orderbook['bids']
+
+        time.sleep(0.2)
+        openorders1 = self.SNET_openorders.openorders(self)
+
+        found = False
+        for openorder in openorders1['openorders']:
+
+            if openorder['quoteid'] == self.quoteID:
+                print(openorder)
+                found = True
+        self.assertTrue(found)
+
+        time.sleep(0.2)
+        cancelquote = self.SNET_cancelquote.cancelquote(self, self.quoteID )
+
+        print('\nCheck cancelquote works\n')
+        self.assertTrue(cancelquote['result']=='quote cancelled')
+
+
+
+
 class SNET_placeask_full(SNET_BaseTest, ):
+    """
+
+**placeask_full**
+
+test class: SNET_placebid_full
+
+
+test number: 78
+
+	integration test
+
+place an ask with placebid, extract the quoteid and the exchange from the reply,
+query 'openorders' and check that the quoteid is contained in the reply,
+then cancel that quoteid
+
+
+ //assertions://
+        self.assertTrue('quoteid' in placebid.keys())
+        self.assertTrue(openorder['quoteid'] == self.quoteID)
+        self.assertTrue(cancelquote['result']=='quote cancelled')
+
+
+    """
 
     SNET_placeask = SNET_placeask
     SNET_orderbook = SNET_orderbook
@@ -6093,73 +6556,35 @@ class SNET_placeask_full(SNET_BaseTest, ):
 
 
 
-class SNET_placebid_full(SNET_BaseTest, ):
-
-    SNET_placebid = SNET_placebid
-    SNET_orderbook = SNET_orderbook
-    SNET_openorders = SNET_openorders
-    SNET_cancelquote = SNET_cancelquote
-
-    def setUp(self):
-        print("test placebid")
-
-    def runTest(self):
-        self.test_placebid()
-
-
-
-    def test_placebid(self):
-        null = None
-
-        price = '0.014'
-        volume = '0.010'
-        baseid = '17554243582654188572'
-        relid = '5527630'
-        placebid = self.SNET_placebid.placebid(self, volume,price,baseid,relid)
-
-        self.assertTrue('quoteid' in placebid.keys())
-        self.quoteID=placebid['quoteid']
-        self.exchange = placebid['exchange']
-
-        time.sleep(0.2)
-        orderbook = self.SNET_orderbook.orderbook(self, baseid,relid)
-
-        self.assertTrue('obookid' in orderbook.keys())
-
-        self.bids = orderbook['bids']
-
-        time.sleep(0.2)
-        openorders1 = self.SNET_openorders.openorders(self)
-
-        found = False
-        for openorder in openorders1['openorders']:
-
-            if openorder['quoteid'] == self.quoteID:
-                print(openorder)
-                found = True
-        self.assertTrue(found)
-
-        time.sleep(0.2)
-        cancelquote = self.SNET_cancelquote.cancelquote(self, self.quoteID )
-
-        print('\nCheck cancelquote works\n')
-        self.assertTrue(cancelquote['result']=='quote cancelled')
-
-
-
 
 
 
 
 class SNET_baseSetup(SNET_BaseTest):
-    """ this tests
-     settings
-     getpeers
-     ping
-     pong
-     GUIpoll
-     findnode
-     havenode
+    """
+
+**baseSetup**
+
+test class: SNET_baseSetup
+
+
+test number: 79
+
+
+	integration test
+
+query settings from api, query getpeers from api, ping the whole whitelist,
+findnode all peers in getpeers, find pongers and havenoders with GUIpoll,
+continue until a minimum of pongers and havenoders or a mixaimum of queries
+
+
+
+ //assertions://
+        self.assertTrue('whitelist' in rpl777.keys())
+        self.assertTrue(self.has_pong)
+        self.assertTrue(self.has_havenode)
+
+query: settings getpeers ping pong GUIpoll findnode  havenode
 
      """#
     maxPolls = 15
@@ -6522,7 +6947,7 @@ class TestCollector(object):
         testClasses['SNET_passthru'] = SNET_passthru # ?
         testClasses['SNET_remote'] = SNET_remote # ?
         testClasses['SNET_syscall'] = SNET_syscall  # ? ~
-        testClasses['SNET_checkmsg'] = SNET_checkmessages # ?
+        testClasses['SNET_checkmessages'] = SNET_checkmessages # ?
         # tbot
         testClasses['SNET_tradebot'] = SNET_tradebot   # ?
         testClasses['SNET_allsignals'] = SNET_allsignals # *
