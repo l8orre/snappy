@@ -19,8 +19,39 @@ import sys
 
 
 class SNET_BaseTest(unittest.TestCase):
-
     """
+
+Tests fall into these categories:
+
+        smoke test
+            asserts that 'result' is in the reply and that supernet server did not crash
+
+        unit test
+            tests check a particular feature for correctness by comparing the results
+            for a given input against the specification
+            example: 'orderbook' is returend by 'orderbooks and has correct data type
+
+        funtion test
+            "calling function Square(x) with the argument of 2 returns 4"
+            example: adding a contact and verifying that is in the contacts list
+
+
+        Integration test
+            issuing chains of commands and verifyung correctness:
+            example: SNET_baseSetup:
+            settings, getpeers, GUIpoll, ping, pong, findnode. havenode
+            which also includes network functionality
+
+
+
+        smoke test
+
+        unit test
+
+        funtion test
+
+        Integration test
+
 
 
     """#
@@ -84,6 +115,22 @@ class ___glue():
 
 
 class SNET_gotjson(SNET_BaseTest):
+    """
+    **gotjson**
+test class:  SNET_gotjson
+
+test number: 1
+
+    smoke test
+
+tests performed:
+query gotpacket
+
+ //assertions://
+
+        self.assertTrue('result' in rpl777.keys())
+
+        """#
 
 
     def setUp(self):
@@ -96,20 +143,6 @@ class SNET_gotjson(SNET_BaseTest):
 
 
     def test_gotjson(self):
-        """ test_gotjson
-
-            call sequence:
-
-            1. gotjson
-
-            ---------
-
-            asserts
-
-            1.  reply has key 'result'
-
-
-        """
 
         rpl777 = self.gotjson()
         self.assertTrue('result' in rpl777.keys())
@@ -135,44 +168,50 @@ class SNET_gotjson(SNET_BaseTest):
 
 class SNET_gotpacket(SNET_BaseTest):
     """
-            query json is:  {'ip_port': '', 'msg': '', 'requestType': 'gotpacket', 'dur': ''}
+    **gotpacket**
+test class:  SNET_gotpacket
 
-        ~~~~~~~~~~~~
-        ~~~~~~~~~~~~ SuperNET rpl777y: {'error': 'duplicate msg'}
-        F
+test number: 2
+
+
+    smoke test
+
+tests performed:
+query gotpacket
+
+ //assertions://
+
+        self.assertTrue('error' in rpl777.keys())
+
+
+    extend: supply correct params for result for assert:
+
+        self.assertTrue('result' in rpl777.keys())
+
+    query json is:  {'ip_port': '', 'msg': '', 'requestType': 'gotpacket', 'dur': ''}
+
+
+
     """
 
     def setUp(self):
         print(" test setUp func here")
         pass
 
-
-
     def runTest(self):
         self.test_gotpacket()
 
-
     def test_gotpacket(self):
-        """ test_gotjson
 
-            call sequence:
+        rpl777 = self.gotpacket_empty()
+        self.assertTrue('error' in rpl777.keys())
+        #rpl777 = self.gotpacket()
+        #self.assertTrue('result' in rpl777.keys())
 
-            1. test_gotpacket
-
-            ---------
-
-            asserts
-
-            1.  reply has key 'result'
-
-
-        """
-
-        rpl777 = self.gotpacket()
-        self.assertTrue('result' in rpl777.keys())
 
 
     def gotpacket(self):
+        null = None
         print(2*"\n++++++++++++","test_gotpacket")
         test_RQ_gotpacket = {'requestType': 'gotpacket'}
         payload= self.qComp_777.make_777POST_Request(test_RQ_gotpacket)
@@ -181,6 +220,20 @@ class SNET_gotpacket(SNET_BaseTest):
         rpl777 = eval(testReq.text)
         print(2*"\n~~~~~~~~~~~~","SuperNET rpl777y:", rpl777)
         return rpl777
+
+
+    def gotpacket_empty(self):
+        null = None
+        print(2*"\n++++++++++++","test_gotpacket")
+        test_RQ_gotpacket = {'requestType': 'gotpacket'}
+        payload= self.qComp_777.make_777POST_Request(test_RQ_gotpacket)
+        print("query json is: ", payload)
+        testReq = requests.post(self.url, data=json.dumps(payload), headers=self.headers)
+        rpl777 = eval(testReq.text)
+        print(2*"\n~~~~~~~~~~~~","SuperNET rpl777y:", rpl777)
+        return rpl777
+
+
 ###############################################
 ###############################################
 ###############################################
@@ -189,6 +242,22 @@ class SNET_gotpacket(SNET_BaseTest):
 
 
 class SNET_gotnewpeer(SNET_BaseTest):
+    """
+    **gotnewpeer**
+test class:  SNET_gotnewpeer
+
+test number: 3
+
+
+    smoke test
+
+tests performed:
+query
+
+ //assertions://
+
+        self.assertTrue('error' in rpl777.keys())
+"""
 
 
     def setUp(self):
@@ -202,20 +271,6 @@ class SNET_gotnewpeer(SNET_BaseTest):
 
 
     def test_gotnewpeer(self):
-        """ test_gotnewpeer
-
-            call sequence:
-
-            1. gotnewpeer
-
-            ---------
-
-            asserts
-
-            1.  reply has key 'result'
-
-
-        """
 
         rpl777 = self.gotnewpeer()
         self.assertTrue('result' in rpl777.keys())
@@ -242,7 +297,25 @@ class SNET_gotnewpeer(SNET_BaseTest):
 
 
 class SNET_BTCDpoll(SNET_BaseTest):
+    """
 
+**BTCDpoll**
+test class:  SNET_BTCDpoll
+
+test number: 4
+
+
+    smoke test
+
+tests performed:
+query
+
+ //assertions://
+
+        self.assertTrue('result' in rpl777.keys())
+
+
+        """
     def setUp(self):
         print(" test setUp func here")
         pass
@@ -254,20 +327,7 @@ class SNET_BTCDpoll(SNET_BaseTest):
 
 
     def test_BTCDpoll(self):
-        """ test_BTCDpoll
 
-            call sequence:
-
-            1. BTCDpoll
-
-            ---------
-
-            asserts
-
-            1.  reply has key 'result'
-
-
-        """
         rpl777 = self.BTCDpoll()
         self.assertTrue('result' in rpl777.keys())
 
@@ -290,6 +350,25 @@ class SNET_BTCDpoll(SNET_BaseTest):
 
 
 class SNET_GUIpoll(SNET_BaseTest):
+    """
+
+**GUIpoll**
+test class:  SNET_GUIpoll
+
+test number: 5
+
+
+    smoke test
+
+tests performed:
+query
+
+ //assertions://
+
+        self.assertTrue('result' in rpl777.keys())
+
+
+            """
 
 
     def setUp(self):
@@ -303,20 +382,6 @@ class SNET_GUIpoll(SNET_BaseTest):
 
 
     def test_GUIpoll(self):
-        """ test_gotjson
-
-            call sequence:
-
-            1. gotjson
-
-            ---------
-
-            asserts
-
-            1.  reply has key 'result'
-
-
-        """
 
         rpl777 = self.GUIpoll()
         self.assertTrue('result' in rpl777.keys())
@@ -343,6 +408,25 @@ class SNET_GUIpoll(SNET_BaseTest):
 
 
 class SNET_settings(SNET_BaseTest):
+
+    """
+
+**settings**
+test class:  SNET_settings
+
+test number: 6
+
+
+    unit test
+
+tests performed:
+query settings
+
+ //assertions://
+
+        self.assertTrue('coins' in rpl777.keys())
+
+    """
 
     settingsReply ="""
                 query json is:  {'value': '', 'requestType': 'settings', 'field': '', 'reinit': ''}
@@ -427,23 +511,8 @@ class SNET_settings(SNET_BaseTest):
         self.test_settings()
 
     def test_settings(self):
-        """ test_settings
-
-            call sequence:
-
-            1. settings
-
-            ---------
-
-            asserts
-
-            1.  reply has key 'coins'
-
-
-        """
 
         rpl777 = self.settings()
-
 
         print(rpl777)
         for setting in rpl777:
@@ -489,9 +558,23 @@ class ___Ramchains():
 
 class SNET_ramstatus(SNET_BaseTest):
     """
-     {'pendingdeposits': '0', 'gatewayid': '-1', 'RTNXT': {'ECblock': '7630770946270487105', 'height': '363517', 'lag': '12', 'ECheight': '363516'}, 'sentNXT': '15000000000', 'circulation': '1024989150000', 'result': 'MGWstatus', 'balance': '18446744014491661761', 'unspent': '1025204260145', 'coin': 'BTCD', 'internal': '0', 'pendingredeems': '59433000000', 'supply': '0', 'BTCD': {'height': '382851', 'lag': '3', 'permblocks': '382848'}, 'ramchain': 'BTCD : RT.382851 nonz.382848 V.382848 B.382848 B64.382848 B4096.380928 | 118.5MB 19.1MB R6.22 | minutes: V0.5 B0.5 | outputs.934661 188917683.05667377 spends.911829 187711860.41899481 -> balance: 22832 1205822.63767893 ave 52.81283452'}
-    """
 
+**ramstatus**
+test class:  SNET_ramstatus
+
+test number: 7
+
+
+    smoke test
+
+tests performed:
+query  ramstatus
+
+ //assertions://
+
+        self.assertTrue('result' in rpl777.keys())
+
+    """#
     def setUp(self):
         print(" test setUp func here")
         pass
@@ -503,6 +586,10 @@ class SNET_ramstatus(SNET_BaseTest):
 
 
     def test_ramstatus(self):
+        """
+     {'pendingdeposits': '0', 'gatewayid': '-1', 'RTNXT': {'ECblock': '7630770946270487105', 'height': '363517', 'lag': '12', 'ECheight': '363516'}, 'sentNXT': '15000000000', 'circulation': '1024989150000', 'result': 'MGWstatus', 'balance': '18446744014491661761', 'unspent': '1025204260145', 'coin': 'BTCD', 'internal': '0', 'pendingredeems': '59433000000', 'supply': '0', 'BTCD': {'height': '382851', 'lag': '3', 'permblocks': '382848'}, 'ramchain': 'BTCD : RT.382851 nonz.382848 V.382848 B.382848 B64.382848 B4096.380928 | 118.5MB 19.1MB R6.22 | minutes: V0.5 B0.5 | outputs.934661 188917683.05667377 spends.911829 187711860.41899481 -> balance: 22832 1205822.63767893 ave 52.81283452'}
+        """
+
         #query_json = {'coin': 'BTCD', 'destip': '', 'requestType': 'ramstatus'}
 
         print(2*"\n++++++++++++","test_ramstatus")
@@ -520,6 +607,7 @@ class SNET_ramstatus(SNET_BaseTest):
         # {'ramchain': 'BTCD : RT.379953 nonz.379950 V.379950 B.379950 B64.379904 B4096.376832 | 116.8MB 18.8MB R6.20 | minutes: V2.8 B2.8 | outputs.929313 187512689.34161791 spends.906780 186307056.66912407 -> balance: 22533 1205632.67249383 ave 53.50520004', 'unspent': '1025344560145', 'result': 'MGWstatus', 'internal': '0', 'coin': 'BTCD', 'balance': '18446744014493961761', 'pendingdeposits': '0', 'RTNXT': {'height': '362110', 'lag': '12', 'ECheight': '362104', 'ECblock': '6414431364385709558'}, 'gatewayid': '-1', 'supply': '0', 'BTCD': {'height': '379953', 'lag': '3', 'permblocks': '379950'}, 'circulation': '1025127150000', 'pendingredeems': '59433000000', 'sentNXT': '15000000000'}
 
         self.assertTrue('result' in rpl777.keys() )
+
 
     def test_APICALL(self):
         """
@@ -539,6 +627,7 @@ class SNET_ramstatus(SNET_BaseTest):
         rpl777 = eval(testReq.text)
         print(2*"\n~~~~~~~~~~~~","SuperNET rpl777y:", rpl777)
         return rpl777
+
 ###############################################
 ###############################################
 ###############################################
@@ -548,7 +637,24 @@ class SNET_ramstatus(SNET_BaseTest):
 
 
 class SNET_ramaddrlist(SNET_BaseTest):
+    """
 
+**ramaddrlist**
+test class:  SNET_ramaddrlist
+
+test number: 8
+
+
+    smoke test
+
+tests performed:
+query
+
+ //assertions://
+
+        self.assertTrue('result' in rpl777.keys() )
+
+    """#
 
     def setUp(self):
         print(" test setUp func here")
@@ -561,8 +667,8 @@ class SNET_ramaddrlist(SNET_BaseTest):
 
 
     def test_ramaddrlist(self):
-        #query_json = {'coin': '', 'requestType': 'ramaddrlist'}
-#  {'mine': 1, 'total': 1, 'result': 'addrlist', 'multisig': 1}
+        # query_json = {'coin': '', 'requestType': 'ramaddrlist'}
+        # {'mine': 1, 'total': 1, 'result': 'addrlist', 'multisig': 1}
 
 
         print(2*"\n++++++++++++","test_ramaddrlist")
@@ -571,7 +677,7 @@ class SNET_ramaddrlist(SNET_BaseTest):
         payload= self.qComp_777.make_777POST_Request(test_RQ_)
         print("query json is: ", payload)
         #headers = {'content-type': 'application/json'}
-        testReq = requests.post(self.url, data=json.dumps(payload), headers=self.headers)
+        testReq = requests.post(self.url, data=json.dumps(payload), headers =self.headers)
 
         rpl777 = eval(testReq.text)
         print(2*"\n~~~~~~~~~~~~","SuperNET rpl777y:\n\n", rpl777)
@@ -582,13 +688,6 @@ class SNET_ramaddrlist(SNET_BaseTest):
             print(2*"\n~~~~~~~~~~~~","error in SuperNET rpl777y:\n\n", rpl777)
         else:
             self.assertTrue('result' in rpl777.keys() )
-
-    def test_APICALL(self):
-        """
-
-        """ #
-        rpl777 = self.getpeers()
-        self.assertTrue('peers' in rpl777.keys())
 
 
     def APICALL(self):
@@ -610,7 +709,22 @@ class SNET_ramaddrlist(SNET_BaseTest):
 
 
 class SNET_ramstring(SNET_BaseTest):
+    """
+**ramstring**
+test class:  SNET_ramstring
 
+test number: 9
+
+
+    smoke test
+
+tests performed:
+query ramstring
+
+ //assertions://
+
+        self.assertTrue('result' in rpl777.keys())
+    """#
 
     def setUp(self):
         print(" test setUp func here")
@@ -669,7 +783,21 @@ class SNET_ramstring(SNET_BaseTest):
 
 
 class SNET_ramrawind(SNET_BaseTest):
+    """
+**ramrawind**
+test class:  SNET_ramrawind
 
+test number: 10
+
+    smoke test
+
+tests performed:
+query ramrawind
+
+ //assertions://
+
+        self.assertTrue('result' in rpl777.keys())
+    """#
 
     def setUp(self):
         print(" test setUp func here")
@@ -727,7 +855,25 @@ class SNET_ramrawind(SNET_BaseTest):
 ###############################################
 
 class SNET_ramblock(SNET_BaseTest):
+    """
 
+**ramblock**
+test class:  SNET_ramblock
+
+test number: 11
+
+
+    smoke test
+
+
+tests performed:
+query ramblock
+
+ //assertions://
+
+        self.assertTrue('result' in rpl777.keys())
+
+    """#
 
     def setUp(self):
         print(" test setUp func here")
@@ -758,13 +904,6 @@ class SNET_ramblock(SNET_BaseTest):
         else:
             self.assertTrue('result' in rpl777.keys() )
 
-    def test_APICALL(self):
-        """
-
-        """ #
-        rpl777 = self.getpeers()
-        self.assertTrue('peers' in rpl777.keys())
-
 
     def APICALL(self):
         null=None
@@ -785,7 +924,25 @@ class SNET_ramblock(SNET_BaseTest):
 
 
 class SNET_ramscript(SNET_BaseTest):
+    """
 
+**ramscript**
+test class:  SNET_ramscript
+
+test number: 12
+
+
+    smoke test
+
+tests performed:
+query  ramscript
+
+ //assertions://
+
+        self.assertTrue('result' in rpl777.keys())
+
+
+    """#
 
     def setUp(self):
         print(" test setUp func here")
@@ -819,14 +976,6 @@ class SNET_ramscript(SNET_BaseTest):
             self.assertTrue('result' in rpl777.keys() )
 
 
-    def test_APICALL(self):
-        """
-
-        """ #
-        rpl777 = self.getpeers()
-        self.assertTrue('peers' in rpl777.keys())
-
-
     def APICALL(self):
         null=None
         print(2*"\n++++++++++++","test_APICALL")
@@ -845,7 +994,24 @@ class SNET_ramscript(SNET_BaseTest):
 
 
 class SNET_ramtxlist(SNET_BaseTest):
+    """
 
+**ramtxlist**
+test class:  SNET_ramtxlist
+
+test number: 13
+
+
+    smoke test
+
+tests performed:
+query ramtxlist
+
+ //assertions://
+
+        self.assertTrue('result' in rpl777.keys())
+
+    """#
 
     def setUp(self):
         print(" test setUp func here")
@@ -874,14 +1040,6 @@ class SNET_ramtxlist(SNET_BaseTest):
 
         self.assertTrue('result' in rpl777.keys() )
 
-    def test_APICALL(self):
-        """
-
-        """ #
-        rpl777 = self.getpeers()
-        self.assertTrue('peers' in rpl777.keys())
-
-
     def APICALL(self):
         null=None
         print(2*"\n++++++++++++","test_APICALL")
@@ -901,7 +1059,24 @@ class SNET_ramtxlist(SNET_BaseTest):
 
 
 class SNET_ramrichlist(SNET_BaseTest):
+    """
 
+**ramrichlist**
+test class:  SNET_ramrichlist
+
+test number: 14
+
+
+    smoke test
+
+tests performed:
+query ramrichlist
+
+ //assertions://
+
+        self.assertTrue('result' in rpl777.keys())
+
+    """#
 
     def setUp(self):
         print(" test setUp func here")
@@ -931,14 +1106,6 @@ class SNET_ramrichlist(SNET_BaseTest):
         self.assertTrue('result' in rpl777.keys() )
 
 
-    def test_APICALL(self):
-        """
-
-        """ #
-        rpl777 = self.getpeers()
-        self.assertTrue('peers' in rpl777.keys())
-
-
     def APICALL(self):
         null=None
         print(2*"\n++++++++++++","test_APICALL")
@@ -957,7 +1124,24 @@ class SNET_ramrichlist(SNET_BaseTest):
 
 
 class SNET_ramcompress(SNET_BaseTest):
+    """
 
+**ramcompress**
+test class:  SNET_ramcompress
+
+test number: 15
+
+
+    smoke test
+
+tests performed:
+query ramcompress
+
+ //assertions://
+
+        self.assertTrue('result' in rpl777.keys())
+
+    """#
 
     def setUp(self):
         print(" test setUp func here")
@@ -983,16 +1167,7 @@ class SNET_ramcompress(SNET_BaseTest):
         rpl777 = eval(testReq.text)
         print(2*"\n~~~~~~~~~~~~","SuperNET rpl777y:\n\n", rpl777)
 
-
         self.assertTrue('result' in rpl777.keys() )
-
-
-    def test_APICALL(self):
-        """
-
-        """ #
-        rpl777 = self.getpeers()
-        self.assertTrue('peers' in rpl777.keys())
 
 
     def APICALL(self):
@@ -1013,7 +1188,24 @@ class SNET_ramcompress(SNET_BaseTest):
 
 
 class SNET_ramexpand(SNET_BaseTest):
+    """
 
+**ramexpand**
+test class:  SNET_ramexpand
+
+test number: 16
+
+
+    smoke test
+
+tests performed:
+query ramexpand
+
+ //assertions://
+
+        self.assertTrue('result' in rpl777.keys())
+
+    """
 
     def setUp(self):
         print(" test setUp func here")
@@ -1043,14 +1235,6 @@ class SNET_ramexpand(SNET_BaseTest):
         self.assertTrue('result' in rpl777.keys() )
 
 
-    def test_APICALL(self):
-        """
-
-        """ #
-        rpl777 = self.getpeers()
-        self.assertTrue('peers' in rpl777.keys())
-
-
     def APICALL(self):
         null=None
         print(2*"\n++++++++++++","test_APICALL")
@@ -1069,7 +1253,24 @@ class SNET_ramexpand(SNET_BaseTest):
 
 
 class SNET_rambalances(SNET_BaseTest):
+    """
 
+**rambalances**
+test class:  SNET_rambalances
+
+test number: 17
+
+
+    smoke test
+
+tests performed:
+query rambalances
+
+ //assertions://
+
+        self.assertTrue('result' in rpl777.keys())
+
+    """
 
     def setUp(self):
         print(" test setUp func here")
@@ -1099,15 +1300,6 @@ class SNET_rambalances(SNET_BaseTest):
 
         self.assertTrue('result' in rpl777.keys() )
 
-
-    def test_APICALL(self):
-        """
-
-        """ #
-        rpl777 = self.getpeers()
-        self.assertTrue('peers' in rpl777.keys())
-
-
     def APICALL(self):
         null=None
         print(2*"\n++++++++++++","test_APICALL")
@@ -1126,7 +1318,24 @@ class SNET_rambalances(SNET_BaseTest):
 
 
 class SNET_rampyramid(SNET_BaseTest):
+    """
 
+**rampyramid**
+test class:  SNET_rampyramid
+
+test number: 18
+
+
+    smoke test
+
+tests performed:
+query rampyramid
+
+ //assertions://
+
+        self.assertTrue('result' in rpl777.keys())
+
+    """
 
     def setUp(self):
         print(" test setUp func here")
@@ -1157,14 +1366,6 @@ class SNET_rampyramid(SNET_BaseTest):
 
 
 
-    def test_APICALL(self):
-        """
-
-        """ #
-        rpl777 = self.getpeers()
-        self.assertTrue('peers' in rpl777.keys())
-
-
     def APICALL(self):
         null=None
         print(2*"\n++++++++++++","test_APICALL")
@@ -1186,7 +1387,24 @@ class SNET_rampyramid(SNET_BaseTest):
 
 
 class SNET_ramresponse(SNET_BaseTest):
+    """
 
+**ramresponse**
+test class:  SNET_ramresponse
+
+test number: 19
+
+
+    smoke test
+
+tests performed:
+query ramresponse
+
+ //assertions://
+
+        self.assertTrue('result' in rpl777.keys())
+
+    """
 
     def setUp(self):
         print(" test setUp func here")
@@ -1216,14 +1434,6 @@ class SNET_ramresponse(SNET_BaseTest):
 
 
         self.assertTrue('result' in rpl777.keys() )
-
-
-    def test_APICALL(self):
-        """
-
-        """ #
-        rpl777 = self.getpeers()
-        self.assertTrue('peers' in rpl777.keys())
 
 
     def APICALL(self):
@@ -4526,6 +4736,198 @@ char *assetmap[][2] =
 };
 
 
+**orderbook**
+
+
+test class: SNET_orderbook
+
+tests performed:
+
+1
+query orderbook with dummy relid and baseid to return an empty orderbook.
+
+//assertions://
+
+           self.assertTrue('error' in rpl777.keys() )
+           self.assertTrue(rpl777['error']=='empty orderbook')
+
+
+2
+place ask order to ensure a non-empty orderbook
+baseid = '17554243582654188572'
+relid = '5527630'
+
+query orderbook with  orderbook(baseid, relid)
+ //assertions://
+          self.assertTrue('NXT' in rpl777.keys() )
+
+
+----------------------------------------------------------------------------------------
+**placeask**
+test class:  SNET_placeask
+
+tests performed:
+place an ask with placeask and test that the api returns 'quoteid'
+baseid = '17554243582654188572'
+relid = '5527630'
+
+ //assertions://
+          self.assertTrue('quoteid' in rpl777.keys() )
+----------------------------------------------------------------------------------------
+**ask**
+test class: SNET_ask
+(internal call)
+
+place an ask with ask and test that the api returns 'exchange'
+ //assertions://
+        self.assertTrue('exchange' in rpl777.keys() )
+----------------------------------------------------------------------------------------
+**placebid**
+test class: SNET_placebid
+
+tests performed:
+place a bid and test that the api returns 'quoteid'
+baseid = '17554243582654188572'
+relid = '5527630'
+
+ //assertions://
+          self.assertTrue('quoteid' in rpl777.keys() )
+
+----------------------------------------------------------------------------------------
+**bid**
+test class: SNET_bid
+(internal call)
+
+place an bid with bid and test that the api returns dict with 'exchange' as key
+ //assertions://
+        self.assertTrue('exchange' in rpl777.keys() )
+----------------------------------------------------------------------------------------
+**allorderbooks**
+test class: SNET_allorderbooks
+
+query allorderbooks from the api  test that api returns  dict with 'allorderbooks' as key
+
+ //assertions://
+        self.assertTrue('orderbooks' in rpl777.keys() )
+----------------------------------------------------------------------------------------
+**openorders**
+test class: SNET_openorders
+
+query openorders from the api and test that api returns  dict with 'openorders' as key
+
+ //assertions://
+        self.assertTrue('openorders' in openorders.keys() )
+----------------------------------------------------------------------------------------
+**respondtx**
+test class: SNET_respondtx
+(internal call)
+
+query api and test that api returns  dict with 'result' as key
+remark: w/o params, the api will return an error as result
+{'result': 'invalid respondtx_func request'}
+
+ //assertions://
+        self.assertTrue('result' in rpl777.keys() )
+----------------------------------------------------------------------------------------
+**cancelquote**
+test class: SNET_cancelquote
+
+
+----------------------------------------------------------------------------------------
+**lottostats**
+test class: SNET_lottostats
+
+
+query api and test that api returns  dict with 'result' and 'numtickets' as keys
+
+
+ //assertions://
+        self.assertTrue('result' in rpl777.keys() )
+        self.assertTrue('numtickets' in rpl777.keys() )
+        self.assertTrue(rpl777['result']  == 'lottostats')
+----------------------------------------------------------------------------------------
+**tradehistory**
+test class: SNET_tradehistory
+
+query api and test that api returns  dict with 'result' as key
+**FAILS**
+
+ //assertions://
+        self.assertTrue('result' in rpl777.keys() )
+
+----------------------------------------------------------------------------------------
+**jumptrades**
+test class: SNET_jumptrades
+
+
+query api and test that api returns  dict with 'result' as key
+**FAILS**
+
+ //assertions://
+        self.assertTrue('result' in rpl777.keys() )
+
+
+----------------------------------------------------------------------------------------
+**trollbox**
+SNET_trollbox
+
+query api and test that api returns  dict with 'result' as key
+**FAILS**
+
+ //assertions://
+        self.assertTrue('result' in rpl777.keys() )
+{'error': 'command disabled'}
+
+----------------------------------------------------------------------------------------
+**placebid_full**
+test class: SNET_placebid_full
+
+place a bid with placebid, extract the quoteid and the exchange from the reply,
+query 'openorders' and check that the quoteid is contained in the reply,
+then cancel that quoteid
+
+
+ //assertions://
+        self.assertTrue('quoteid' in placebid.keys())
+        self.assertTrue(openorder['quoteid'] == self.quoteID)
+        self.assertTrue(cancelquote['result']=='quote cancelled')
+
+
+----------------------------------------------------------------------------------------
+**placeask_full**
+test class: SNET_placebid_full
+
+place an ask with placebid, extract the quoteid and the exchange from the reply,
+query 'openorders' and check that the quoteid is contained in the reply,
+then cancel that quoteid
+
+
+ //assertions://
+        self.assertTrue('quoteid' in placebid.keys())
+        self.assertTrue(openorder['quoteid'] == self.quoteID)
+        self.assertTrue(cancelquote['result']=='quote cancelled')
+
+
+
+----------------------------------------------------------------------------------------
+**baseSetup**
+test class: SNET_baseSetup
+
+query settings from api, query getpeers from api, ping the whole whitelist,
+findnode all peers in getpeers, find pongers and havenoders with GUIpoll,
+continue until a minimum of pongers and havenoders or a mixaimum of queries
+
+
+
+ //assertions://
+        self.assertTrue('whitelist' in rpl777.keys())
+        self.assertTrue(self.has_pong and self.has_havenode)
+
+
+----------------------------------------------------------------------------------------
+
+
+
 """#
     pass
 
@@ -4569,7 +4971,7 @@ class SNET_orderbook(SNET_BaseTest, ):
         pass
 
     def runTest(self):
-        #self.test_orderbook_empty()
+        self.test_orderbook_empty()
         self.test_orderbook()
 
 
@@ -4589,8 +4991,8 @@ class SNET_orderbook(SNET_BaseTest, ):
 
 
         """
-        baseid = '11060861818140490423'
-        relid = '17554243582654188572'
+        baseid = '12345'#'11060861818140490423'
+        relid = '67890'#17554243582654188572'
         rpl777 = self.orderbook(baseid, relid) # param passing can be done a bit better here
 
         self.assertTrue(rpl777['error']=='empty orderbook')
@@ -5767,8 +6169,8 @@ class SNET_baseSetup(SNET_BaseTest):
     has_havenode = False
     SNET_baseSetupOK = False
 
-    pongers =  {} # LOCAL AUXILIARY REGISTER
-    havenoders =  {} #  LOCAL AUXILIARY REGISTER
+    pongers =  {}
+    havenoders =  {}
     peersDiLoc = {}
 
 
@@ -5819,7 +6221,6 @@ class SNET_baseSetup(SNET_BaseTest):
                 testReq = requests.post(self.url, data=json.dumps(payload), headers=self.headers)
                 rpl777 = eval(testReq.text)
                 print("ping whitelist rpl777: ",rpl777)
-
 
                 time.sleep(0.1)
 
